@@ -1,0 +1,954 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Papers  Brehmer M, Sedlmair M, Ingram S, Munzner T. Visualizing Dimensionally-reduced Data: Interviews with Analysts and a Characterization of Task Sequences. Proc. Beyond Time &amp; Errors: Novel Evaluation Methods For Information Visualization (BELIV) 2014.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/resources/readings/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#003366">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+JP%7CSen%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/resources/readings/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="UVM Data Science Core">
+  <meta property="og:url" content="/courses/resources/readings/">
+  <meta property="og:title" content="Useful readings | UVM Data Science Core">
+  <meta property="og:description" content="Papers  Brehmer M, Sedlmair M, Ingram S, Munzner T. Visualizing Dimensionally-reduced Data: Interviews with Analysts and a Characterization of Task Sequences. Proc. Beyond Time &amp; Errors: Novel Evaluation Methods For Information Visualization (BELIV) 2014."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-05-05T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2019-05-05T00:00:00&#43;01:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Useful readings | UVM Data Science Core</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">UVM Data Science Core</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">UVM Data Science Core</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#logistics"><span>Logistics</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/sessions/"><span>Sessions</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#post"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tutorials/"><span>Tutorials</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/resources/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/resources/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/resources/books/">Learning resources</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/resources/books/">Useful books</a>
+      </li>
+      
+      <li >
+        <a href="/courses/resources/websites/">Useful websites</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/resources/readings/">Useful readings</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#papers">Papers</a></li>
+    <li><a href="#blog-posts-etc">Blog posts, etc.</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Useful readings</h1>
+
+          <div class="article-style">
+            <br>
+<h2 id="papers">Papers</h2>
+<ol>
+<li>Brehmer M, Sedlmair M, Ingram S, Munzner T. 
+<a href="http://dl.acm.org/citation.cfm?id=2669559" target="_blank" rel="noopener">Visualizing Dimensionally-reduced Data: Interviews with Analysts and a Characterization of Task Sequences.</a> Proc. Beyond Time &amp; Errors: Novel Evaluation Methods For Information Visualization (BELIV) 2014. p. 1–8.</li>
+<li>Borland D, Taylor MR. 
+<a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&amp;arnumber=4118486" target="_blank" rel="noopener">Rainbow color map (still) considered harmful.</a> IEEE computer graphics and applications. 2007 Mar;27(2):14–7.</li>
+<li>Christensen DL, Baio J, Van Naarden Braun K, Bilder D, Charles J, Constantino JN, et al. 
+<a href="http://www.cdc.gov/mmwr/volumes/65/ss/ss6503a1.htm" target="_blank" rel="noopener">Prevalence and Characteristics of Autism Spectrum Disorder Among Children Aged 8 Years&ndash;Autism and Developmental Disabilities Monitoring Network, 11 Sites, United States, 2012.</a> MMWR Surveillance summaries : Morbidity and mortality weekly report Surveillance summaries / CDC. 2016 Apr 1;65(3):1–23.</li>
+<li>Cleveland WS, McGill R. 
+<a href="http://www.tandfonline.com/doi/abs/10.1080/01621459.1984.10478080" target="_blank" rel="noopener">Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.</a> Journal of the American Statistical Association. 1984;79(387):531–54.</li>
+<li>Cleveland WS, Diaconis P, McGill R. 
+<a href="http://science.sciencemag.org/content/216/4550/1138.full.pdf&#43;html" target="_blank" rel="noopener">Variables on Scatterplots Look More Highly Correlated When the Scales Are Increased.</a> Science; 1982;216(4550):1138–41.</li>
+<li>Dörk M, Feng P, Collins C, Carpendale S. 
+<a href="http://portal.acm.org/citation.cfm?id=2468356.2468739&amp;coll=DL&amp;dl=GUIDE&amp;CFID=460495180&amp;CFTOKEN=15985043" target="_blank" rel="noopener">Critical InfoVis: exploring the politics of visualization.</a> Proc. &lsquo;CHI 2013.</li>
+<li>Elliott, K. 
+<a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73#.l9wps0emh" target="_blank" rel="noopener">&ldquo;39 studies about human perception in 30 minutes&rdquo;</a>; presented at OpenVis 2016.</li>
+<li>Heer J, Bostock M. 
+<a href="http://dl.acm.org/citation.cfm?id=1753357" target="_blank" rel="noopener">Crowdsourcing graphical perception: using mechanical turk to assess visualization design.</a> ACM CHI &lsquo;10; 2010. p. 203–12.</li>
+<li>Kosara R. 
+<a href="http://dl.acm.org/citation.cfm?doid=2993901.2993909" target="_blank" rel="noopener">An Empire Built On Sand: Reexamining What We Think We Know About Visualization.</a> in the Proceedings of the Sixth Workshop on Beyond Time and Errors on Novel Evaluation Methods for Visualization (BELIV &lsquo;16) 2016. p. 162–8.</li>
+<li>Krzywinski M, Altman N. 
+<a href="http://www.nature.com/nmeth/journal/v10/n10/full/nmeth.2659.html" target="_blank" rel="noopener">Points of significance: error bars.</a> Nat Meth. Nature Research; 2013 Oct;10(10):921–2.</li>
+<li>Krzywinski M, Altman N. 
+<a href="http://www.nature.com/nmeth/journal/v11/n2/full/nmeth.2813.html" target="_blank" rel="noopener">Visualizing samples with box plots.</a> Nat Meth. 2014 Feb;11(2):119–20.</li>
+<li>Shneiderman B. 
+<a href="http://www.ils.unc.edu/ISSS/ISSS_final_report.pdf#page=96" target="_blank" rel="noopener">Research agenda: Visual overviews for exploratory search.</a> Information Seeking Support Systems. 2008;11:4.</li>
+<li>Sedlmair M, Meyer M, Munzner T. 
+<a href="http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/" target="_blank" rel="noopener">Design Study Methodology: Reflections from the Trenches and the Stacks.</a> IEEE Transactions on Visualization and Computer Graphics. 2012 Dec;18(12):2431–40.</li>
+<li>Sedlmair M, Tatu A, Munzner T, Tory M. 
+<a href="http://onlinelibrary.wiley.com/wol1/doi/10.1111/j.1467-8659.2012.03125.x/full" target="_blank" rel="noopener">A Taxonomy of Visual Cluster Separation Factors.</a> Computer Graphics Forum. 2012;31(3pt4):1335–44.</li>
+<li>Sedlmair M, Munzner T, Tory M. 
+<a href="http://www.cs.ubc.ca/labs/imager/tr/2013/ScatterplotEval/" target="_blank" rel="noopener">Empirical Guidance on Scatterplot and Dimension Reduction Technique Choices.</a> IEEE Transactions on Visualization and Computer Graphics. 2013 Dec;19(12):2634–43.</li>
+<li>Weissgerber TL, Milic NM, Winham SJ, Garovic VD. 
+<a href="http://dx.plos.org/10.1371/journal.pbio.1002128" target="_blank" rel="noopener">Beyond bar and line graphs: time for a new data presentation paradigm.</a> PLoS Biol. Public Library of Science; 2015 Apr;13(4):e1002128.</li>
+</ol>
+<h2 id="blog-posts-etc">Blog posts, etc.</h2>
+<ol>
+<li>The Why Axis&rsquo;s 
+<a href="http://thewhyaxis.info/gap-remake/" target="_blank" rel="noopener">&ldquo;Mind the Gap: An Economic Chart Remake&rdquo;</a>, by Jon Schwabish</li>
+<li>Notes on the 
+<a href="http://imjustcreative.com/the-arabic-fedex-logo/2012/02/01/amp/" target="_blank" rel="noopener">Arabic FedEx logo</a>.</li>
+<li>Jenny Cham&rsquo;s delightful &ldquo;sketchnotes&rdquo; from a 
+<a href="http://jennycham.co.uk/2014/07/a-peek-into-the-world-of-data-visualisation-with-prof-munzner/" target="_blank" rel="noopener">2014 seminar</a> by the incomparable Tamara Munzner.</li>
+<li>Randy Olson&rsquo;s illustration of 
+<a href="http://www.randalolson.com/2015/08/23/small-multiples-vs-animated-gifs-for-showing-changes-in-fertility-rates-over-time/" target="_blank" rel="noopener">Small Multiples vs. Animated GIFs</a>.</li>
+<li>Visual.ly&rsquo;s 
+<a href="http://visual.ly/color-emotion-guide" target="_blank" rel="noopener">Color Emotion Guide</a></li>
+<li><a name="playfair"></a>I am very interested in William Playfair and the history of data visualization:
+<ul>
+<li>Atlas Obscura, 
+<a href="http://www.atlasobscura.com/articles/the-scottish-scoundrel-who-changed-how-we-see-data" target="_blank" rel="noopener">The Scottish Scoundrel Who Changed How We See Data</a></li>
+<li>Lauren Klein, 
+<a href="http://dhlab.lmc.gatech.edu/uncategorized/repairing-william-playfair-at-the-mla/" target="_blank" rel="noopener">Repairing William Playfair at the MLA</a></li>
+<li>Georgia Tech&rsquo;s Digital Humanities Lab, 
+<a href="http://dhlab.lmc.gatech.edu/repairing-william-playfair/" target="_blank" rel="noopener">Repairing William Playfair</a></li>
+</ul>
+</li>
+<li>Neil Richards, 
+<a href="https://questionsindataviz.wordpress.com/2016/10/09/when-is-a-visualisation-a-call-to-action/" target="_blank" rel="noopener">When is a visualisation a call to action?</a></li>
+<li>Carl Zimmer (yes, <em>the</em> Carl Zimmer) on genome graphs: 
+<a href="https://www.statnews.com/2016/10/07/dna-genome-sequencing-new-maps/" target="_blank" rel="noopener">As DNA reveals its secrets, scientists are assembling a new picture of humanity</a>, with numerous examples of creative new ways to visualize genetic variation.</li>
+<li>Ben Jones, 
+<a href="http://dataremixed.com/2016/10/simple-tables-multiple-vizzes/" target="_blank" rel="noopener">&ldquo;From Simple Tables to Multiple Vizzes&rdquo;</a>: an illustration of ten different ways to visualize the same table. What different stories pop out from the different visualizations?</li>
+<li>Kristoffer Magnusson, 
+<a href="http://rpsychologist.com/how-to-tell-when-error-bars-correspond-to-a-significant-p-value" target="_blank" rel="noopener">How to tell when error bars correspond to a significant p-value</a></li>
+<li>Kyle Walker, 
+<a href="http://walkerke.github.io/2015/04/map-or-chart/" target="_blank" rel="noopener">Should you visualize data with a map or a chart? Thoughts from teaching introductory geography</a></li>
+<li>Lazaro Gamio (Washington Post), 
+<a href="https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/" target="_blank" rel="noopener">Election maps are telling you big lies about small things</a></li>
+<li>Cartonerd, 
+<a href="http://cartonerd.blogspot.de/2016/11/the-nyt-election-map.html?m=1" target="_blank" rel="noopener">The NYT election map</a></li>
+<li>vis4.net, 
+<a href="http://vis4.net/blog/posts/to-cartogram-or-not-to-cartogram-the-brexit/" target="_blank" rel="noopener">Why we didn’t use a cartogram in the Brexit map</a></li>
+<li>Benjamin Hennig, 
+<a href="http://geographical.co.uk/places/mapping/item/1805-cartogram-special-brexit" target="_blank" rel="noopener">Cartogram Special – Brexit</a></li>
+<li>Tom Pearson (Financial Times), 
+<a href="https://www.ft.com/content/3bfc0aac-4ccd-11e6-88c5-db83e98a590a" target="_blank" rel="noopener">Communicating with data — How the FT explained Brexit</a>: &ldquo;From early sketch to final dashboard, FT data visualisation experts explain the process&rdquo;</li>
+</ol>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/resources/books/" rel="next">Useful books</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/resources/websites/" rel="prev">Useful websites</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on May 5, 2019</p>
+
+          
+
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/vtdscore/vtdscore-site/edit/master/content/courses/resources/readings.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

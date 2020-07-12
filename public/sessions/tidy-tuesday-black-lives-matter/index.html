@@ -1,0 +1,1336 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This workflow uses the African American Achievements Tidy Tuesday dataset, downloaded June 24, 2020, for the purposes of learning and education on the intersection of racial matters and data science.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/sessions/tidy-tuesday-black-lives-matter/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#003366">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+JP%7CSen%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/sessions/tidy-tuesday-black-lives-matter/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="UVM Data Science Core">
+  <meta property="og:url" content="/sessions/tidy-tuesday-black-lives-matter/">
+  <meta property="og:title" content="Tidy Tuesday: Black lives Matter | UVM Data Science Core">
+  <meta property="og:description" content="This workflow uses the African American Achievements Tidy Tuesday dataset, downloaded June 24, 2020, for the purposes of learning and education on the intersection of racial matters and data science."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-06-24T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-24T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Tidy Tuesday: Black lives Matter | UVM Data Science Core</title>
+
+</head>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">UVM Data Science Core</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">UVM Data Science Core</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#logistics"><span>Logistics</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/sessions/"><span>Sessions</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#post"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tutorials/"><span>Tutorials</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people"><span>People</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/resources/"><span>Resources</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
+          <i class="fas fa-palette" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Tidy Tuesday: Black lives Matter</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 24, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/tidytuesday/">TidyTuesday</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>This workflow uses the African American Achievements Tidy Tuesday dataset, downloaded June 24, 2020, for the purposes of learning and education on the intersection of racial matters and data science.</p>
+<div id="outline" class="section level2">
+<h2>Outline</h2>
+<p>I. Setup
+II. Data
+III. Clean Data
+IV. Look at Data
+V. Plots</p>
+</div>
+<div id="i.-setup" class="section level2">
+<h2>I. Setup</h2>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.2     ✓ dplyr   1.0.0
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(tidytuesdayR)
+
+#you would need the following packages if you were going to run the cleaning script instead of the II.Data grabs
+library(readr)
+library(xml2)
+library(rvest)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;rvest&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     pluck</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     guess_encoding</code></pre>
+<pre class="r"><code>library(janitor)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;janitor&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     chisq.test, fisher.test</code></pre>
+<pre class="r"><code>library(purrr)
+library(stringr)
+library(tibble)
+library(here)</code></pre>
+<pre><code>## here() starts at /Users/jeffreybrabec/Documents/data_science_group/vtdscore_site</code></pre>
+<pre class="r"><code>library(magrittr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;magrittr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     set_names</code></pre>
+<pre><code>## The following object is masked from &#39;package:tidyr&#39;:
+## 
+##     extract</code></pre>
+</div>
+<div id="ii.-data" class="section level2">
+<h2>II. Data</h2>
+<p>Dataset provided here: <a href="https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-06-09" class="uri">https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-06-09</a></p>
+<pre class="r"><code># Get the Data viar readr read_csv
+firsts &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/firsts.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   year = col_double(),
+##   accomplishment = col_character(),
+##   person = col_character(),
+##   gender = col_character(),
+##   category = col_character()
+## )</code></pre>
+<pre class="r"><code>science &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/science.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   name = col_character(),
+##   birth = col_double(),
+##   death = col_double(),
+##   occupation_s = col_character(),
+##   inventions_accomplishments = col_character(),
+##   references = col_character(),
+##   links = col_character()
+## )</code></pre>
+<pre class="r"><code># Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Install via devtools::install_github(&quot;thebioengineer/tidytuesdayR&quot;)
+# Either ISO-8601 date or year/week works!
+tuesdata &lt;- tidytuesdayR::tt_load(&#39;2020-06-09&#39;)</code></pre>
+<pre><code>## --- Compiling #TidyTuesday Information for 2020-06-09 ----</code></pre>
+<pre><code>## --- There are 2 files available ---</code></pre>
+<pre><code>## --- Starting Download ---</code></pre>
+<pre><code>## 
+##  Downloading file 1 of 2: `firsts.csv`
+##  Downloading file 2 of 2: `science.csv`</code></pre>
+<pre><code>## --- Download complete ---</code></pre>
+<pre class="r"><code>tuesdata &lt;- tidytuesdayR::tt_load(2020, week = 24)</code></pre>
+<pre><code>## --- Compiling #TidyTuesday Information for 2020-06-09 ----</code></pre>
+<pre><code>## --- There are 2 files available ---</code></pre>
+<pre><code>## --- Starting Download ---</code></pre>
+<pre><code>## 
+##  Downloading file 1 of 2: `firsts.csv`
+##  Downloading file 2 of 2: `science.csv`</code></pre>
+<pre><code>## --- Download complete ---</code></pre>
+<pre class="r"><code>#Get the two datasets out of the tuesdata
+firsts &lt;- tuesdata$firsts
+science &lt;- tuesdata$science</code></pre>
+</div>
+<div id="iii.-clean-data" class="section level2">
+<h2>III. Clean Data</h2>
+<p>Tidy tuesday provides their cleaning script used to make the two datasets - and it is worth at least looking at to see how they build these.</p>
+<pre class="r"><code># URL 1
+url_science &lt;- &quot;https://en.wikipedia.org/wiki/List_of_African-American_inventors_and_scientists&quot;
+raw_html_sci &lt;- read_html(url_science)
+
+get_source &lt;- function(x){
+  raw_html_sci %&gt;% 
+    html_nodes(&quot;tbody&quot;) %&gt;% 
+    .[[2]] %&gt;% 
+    html_nodes(glue::glue(&quot;tr:nth-child({x})&quot;)) %&gt;% 
+    html_nodes(&quot;td:nth-child(1) &gt; a&quot;) %&gt;% 
+    html_attr(&quot;href&quot;)
+}
+
+raw_sci_tab &lt;- raw_html_sci %&gt;% 
+  html_table(fill = TRUE) %&gt;% 
+  .[[2]] %&gt;% 
+  janitor::clean_names() %&gt;% 
+  as_tibble() %&gt;% 
+  mutate(links = map(row_number(), get_source))
+
+clean_sci &lt;- raw_sci_tab %&gt;% 
+  mutate(references = str_replace_all(references, &quot;\\]&quot;, &quot;,&quot;),
+         references = str_remove_all(references, &quot;\\[&quot;)) %&gt;% 
+  unnest(links) %&gt;% 
+  mutate(links = paste0(&quot;https://en.wikipedia.org&quot;, links)) %&gt;% 
+  separate(years, into = c(&quot;birth&quot;, &quot;death&quot;), sep = &quot;–&quot;) %&gt;% 
+  mutate(across(c(birth, death), as.integer)) %&gt;% 
+  mutate(occupation_s = str_replace_all(occupation_s, &quot;,&quot;, &quot;;&quot;))
+
+clean_sci %&gt;% 
+  filter(str_detect(tolower(occupation_s), &quot;statistician&quot;))
+
+
+sci_citations &lt;- raw_html_sci %&gt;% 
+  html_node(&quot;#mw-content-text &gt; div &gt; div.reflist &gt; div&quot;) %&gt;% 
+  html_nodes(&quot;li&quot;) %&gt;% 
+  html_text() %&gt;% 
+  str_remove(&quot;\\^ &quot;) %&gt;% 
+  enframe() %&gt;% 
+  rename(citation_num = name, citation = value) %&gt;% 
+  mutate(citation = str_replace_all(citation, &quot;\&quot;&quot;, &quot;&#39;&quot;),
+         citation = str_remove_all(citation, &quot;\\n&quot;))
+
+sci_citations
+
+clean_sci %&gt;%
+  add_row(tibble(
+    name = &quot;Amos, Harold&quot;, birth = 1918, death = 2003, occupation_s = &quot;Microbiologist&quot;,
+    inventions_accomplishments = &quot;First African-American department chair at Harvard Medical School&quot;,
+    references = &quot;6,&quot;, links = &quot;https://en.wikipedia.org/wiki/Harold_Amos&quot;), .before = 1
+  )
+  
+write_csv(clean_sci, path = here(&quot;2020/2020-06-09/science.csv&quot;))
+science &lt;- read_csv(&quot;2020/2020-06-09/science.csv&quot;)</code></pre>
+<pre class="r"><code>first_url &lt;- &quot;https://en.wikipedia.org/wiki/List_of_African-American_firsts&quot;
+raw_first &lt;- read_html(first_url)
+
+get_year &lt;- function(id_num) {
+  raw_first %&gt;% 
+    html_nodes(glue::glue(&quot;#mw-content-text &gt; div &gt; h4:nth-child({id_num}) &gt; span&quot;)) %&gt;% 
+    html_attr(&quot;id&quot;) %&gt;% 
+    .[!is.na(.)]
+}
+
+get_first &lt;- function(id_num){
+  raw_first %&gt;% 
+    html_nodes(glue::glue(&quot;#mw-content-text &gt; div &gt; ul:nth-child({id_num})&quot;)) %&gt;% 
+    html_text() %&gt;% 
+    str_split(&quot;\n&quot;)
+}
+
+tidyr::crossing(id_num = 9:389, count = 1:5)
+
+raw_first_df &lt;- tibble(id_num = 9:390) %&gt;% 
+  mutate(year = map(id_num, get_year),
+         text = map(id_num, get_first))
+
+clean_first &lt;- raw_first_df %&gt;% 
+  mutate(year = as.integer(year)) %&gt;% 
+  fill(year) %&gt;% 
+  unnest(text) %&gt;% 
+  unnest(text) %&gt;% 
+  separate(text, into = c(&quot;role&quot;, &quot;person&quot;), sep = &quot;: &quot;) %&gt;% 
+  mutate(person = str_remove_all(person, &quot;\\\\&quot;),
+         person = str_trim(person),
+         role = str_replace(role, &quot;African American&quot;, &quot;African-American&quot;)) %&gt;% 
+  select(year, role, person)
+
+clean_first %&gt;% 
+  group_by(year) %&gt;% 
+  summarize(n =n())
+
+first_role &lt;- function(category){
+  str_detect(tolower(role), category)
+}
+
+edu &lt;- paste0(c(
+  &quot;practice&quot;, &quot;graduate&quot;, &quot;learning&quot;, &quot;college&quot;, &quot;university&quot;, &quot;medicine&quot;,
+  &quot;earn&quot;, &quot;ph.d.&quot;, &quot;professor&quot;, &quot;teacher&quot;, &quot;school&quot;, &quot;nobel&quot;, &quot;invent&quot;, &quot;patent&quot;,
+  &quot;medicine&quot;, &quot;degree&quot;, &quot;doctor&quot;, &quot;medical&quot;, &quot;nurse&quot;, &quot;physician&quot;, &quot;m.d.&quot;, &quot;b.a.&quot;, &quot;b.s.&quot;, &quot;m.b.a&quot;,
+  &quot;principal&quot;, &quot;space&quot;, &quot;astronaut&quot;
+), collapse = &quot;|&quot;)
+
+religion &lt;- c(&quot;bishop&quot;, &quot;rabbi&quot;, &quot;minister&quot;, &quot;church&quot;, &quot;priest&quot;, &quot;pastor&quot;, &quot;missionary&quot;,
+              &quot;denomination&quot;, &quot;jesus&quot;, &quot;jesuits&quot;, &quot;diocese&quot;, &quot;buddhis&quot;) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+politics &lt;- c(
+  &quot;diplomat&quot;, &quot;elected&quot;, &quot;nominee&quot;, &quot;supreme court&quot;, &quot;legislature&quot;, &quot;mayor&quot;, &quot;governor&quot;,
+  &quot;vice President&quot;, &quot;president&quot;, &quot;representatives&quot;, &quot;political&quot;, &quot;department&quot;, &quot;peace prize&quot;,
+  &quot;ambassador&quot;, &quot;government&quot;, &quot;white house&quot;, &quot;postal&quot;, &quot;federal&quot;, &quot;union&quot;, &quot;trade&quot;,
+  &quot;delegate&quot;, &quot;alder&quot;, &quot;solicitor&quot;, &quot;senator&quot;, &quot;intelligience&quot;, &quot;combat&quot;, &quot;commissioner&quot;,
+  &quot;state&quot;, &quot;first lady&quot;, &quot;cabinet&quot;, &quot;advisor&quot;, &quot;guard&quot;, &quot;coast&quot;, &quot;secretary&quot;, &quot;senate&quot;,
+  &quot;house&quot;, &quot;agency&quot;, &quot;staff&quot;, &quot;national committee&quot;
+) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+sports &lt;- c(
+  &quot;baseball&quot;, &quot;football&quot;, &quot;basketball&quot;, &quot;hockey&quot;, &quot;golf&quot;, &quot;tennis&quot;,
+  &quot;championship&quot;, &quot;boxing&quot;, &quot;games&quot;, &quot;medal&quot;, &quot;game&quot;, &quot;sport&quot;, &quot;olympic&quot;, &quot;nascar&quot;,
+  &quot;coach&quot;, &quot;trophy&quot;, &quot;nba&quot;, &quot;nhl&quot;, &quot;nfl&quot;, &quot;mlb&quot;, &quot;stanley cup&quot;, &quot;jockey&quot;, &quot;pga&quot;,
+  &quot;race&quot;, &quot;driver&quot;, &quot;ufc&quot;, &quot;champion&quot;
+) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+military &lt;- c(
+  &quot;serve&quot;, &quot;military&quot;, &quot;enlist&quot;, &quot;officer&quot;, &quot;army&quot;, &quot;marine&quot;, &quot;naval&quot;,
+  &quot;officer&quot;, &quot;captain&quot;, &quot;command&quot;, &quot;admiral&quot;, &quot;prison&quot;, &quot;navy&quot;, &quot;general&quot;,
+  &quot;force&quot;
+) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+law &lt;- c(&quot;american bar&quot;, &quot;lawyer&quot;, &quot;police&quot;, &quot;judge&quot;, &quot;attorney&quot;, &quot;law&quot;, 
+         &quot;agent&quot;, &quot;fbi&quot;) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+arts &lt;- c(
+  &quot;opera&quot;, &quot;sing&quot;, &quot;perform&quot;, &quot;music&quot;, &quot;billboard&quot;, &quot;oscar&quot;, &quot;television&quot;,
+  &quot;movie&quot;, &quot;network&quot;, &quot;tony award&quot;, &quot;paint&quot;, &quot;author&quot;, &quot;book&quot;, &quot;academy award&quot;, &quot;curator&quot;,
+  &quot;director&quot;, &quot;publish&quot;, &quot;novel&quot;, &quot;grammy&quot;, &quot;emmy&quot;, &quot;smithsonian&quot;,
+  &quot;conduct&quot;, &quot;picture&quot;, &quot;pulitzer&quot;, &quot;channel&quot;, &quot;villain&quot;, &quot;cartoon&quot;, &quot;tv&quot;, &quot;golden globe&quot;,
+  &quot;comic&quot;, &quot;magazine&quot;, &quot;superhero&quot;, &quot;pulitzer&quot;, &quot;dancer&quot;, &quot;opry&quot;, &quot;rock and roll&quot;, &quot;radio&quot;,
+  &quot;record&quot;) %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+social &lt;- c(&quot;community&quot;, &quot;freemasons&quot;, &quot;vote&quot;, &quot;voting&quot;, &quot;rights&quot;, &quot;signature&quot;, 
+            &quot;royal&quot;, &quot;ceo&quot;, &quot;community&quot;, &quot;movement&quot;, &quot;invited&quot;, &quot;greek&quot;, &quot;million&quot;,
+            &quot;billion&quot;, &quot;attendant&quot;, &quot;chess&quot;, &quot;pilot&quot;, &quot;playboy&quot;, &quot;own&quot;, &quot;daughter&quot;,
+            &quot;coin&quot;, &quot;dollar&quot;, &quot;stamp&quot;, &quot;niagara&quot;,
+            &quot;stock&quot;, &quot;north pole&quot;, &quot;reporter&quot;, &quot;sail around the world&quot;, &quot;press&quot;, &quot;miss &quot;,
+            &quot;everest&quot;)  %&gt;%
+  paste0(collapse = &quot;|&quot;)
+
+first_df &lt;- clean_first %&gt;% 
+  mutate(gender = if_else(str_detect(role, &quot;woman|Woman|her|she|female&quot;), 
+                          &quot;Female African American Firsts&quot;, &quot;African-American Firsts&quot;),
+         role = str_remove_all(role, &quot;\&quot;&quot;),
+         person = str_remove_all(person, &quot;\&quot;&quot;),
+         category = case_when(
+           str_detect(tolower(role), military) ~ &quot;Military&quot;,
+           str_detect(tolower(role), law) ~ &quot;Law&quot;,
+           str_detect(tolower(role), arts) ~ &quot;Arts &amp; Entertainment&quot;,
+           str_detect(tolower(role), social) ~ &quot;Social &amp; Jobs&quot;,
+           str_detect(tolower(role), religion) ~ &quot;Religion&quot;,
+           str_detect(tolower(role), edu) ~ &quot;Education &amp; Science&quot;,
+           str_detect(tolower(role), politics) ~ &quot;Politics&quot;,
+           str_detect(tolower(role), sports) ~ &quot;Sports&quot;,
+           TRUE ~ NA_character_
+         )) %&gt;% 
+  rename(accomplishment = role)
+
+first_df %&gt;% write_csv(path = &quot;2020/2020-06-09/firsts.csv&quot;)
+
+firsts &lt;- read_csv(&quot;2020/2020-06-09/firsts.csv&quot;)
+
+plot_ex &lt;- first_df %&gt;% 
+  mutate(n = 1) %&gt;% 
+  group_by(category) %&gt;% 
+  mutate(roll_n = cumsum(n)) %&gt;% 
+  ggplot(aes(x = year, y = roll_n, color = category)) +
+  geom_step(size = 1) +
+  theme(legend.position = &quot;top&quot;) +
+  tomtom::theme_tomtom() +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 6)) +
+  scale_x_continuous(breaks = seq(1750, 2020, 25)) +
+  geom_hline(yintercept = 0, size = 1, color = &quot;black&quot;) +
+  labs(x = &quot;&quot;, y = &quot;&quot;,
+       title = &quot;Cumulative African-Americans firsts over time&quot;,
+       subtitle = &quot;479 &#39;Firsts&#39; of African-Americans breaking the color barrier across a wide range of topics&quot;,
+       caption = &quot;Data: wikipedia.org/wiki/List_of_African-American_firsts&quot;)
+
+ggsave(&quot;2020/2020-06-09/pic2.png&quot;, plot_ex, height = 8, width = 14, units = &quot;in&quot;, dpi = &quot;retina&quot;)</code></pre>
+</div>
+<div id="iv.-look-at-data" class="section level2">
+<h2>IV. Look at Data</h2>
+<pre class="r"><code>#use head(), str(), class(), View(), etc. to see what the tables look like
+head(science)</code></pre>
+<pre><code>## # A tibble: 6 x 7
+##   name    birth death occupation_s  inventions_accomplish… references links     
+##   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;         &lt;chr&gt;                  &lt;chr&gt;      &lt;chr&gt;     
+## 1 Amos, …  1918  2003 Microbiologi… First African-America… 6,         https://e…
+## 2 Alcorn…  1940    NA Physicist; i… Invented a method of … 7,8,       https://e…
+## 3 Andrew…  1930  1998 Mathematician Put forth the Andrews… 9,         https://e…
+## 4 Alexan…  1888  1958 Civil engine… Responsible for the c… &lt;NA&gt;       https://e…
+## 5 Bailey…  1825  1918 Inventor      Folding bed            10,        https://e…
+## 6 Ball, …  1892  1916 Chemist       Extracted chaulmoogra… 11,        https://e…</code></pre>
+<pre class="r"><code>head(firsts)</code></pre>
+<pre><code>## # A tibble: 6 x 5
+##    year accomplishment            person                 gender       category  
+##   &lt;dbl&gt; &lt;chr&gt;                     &lt;chr&gt;                  &lt;chr&gt;        &lt;chr&gt;     
+## 1  1738 First free African-Ameri… Gracia Real de Santa … African-Ame… Social &amp; …
+## 2  1760 First known African-Amer… Jupiter Hammon (poem … Female Afri… Arts &amp; En…
+## 3  1768 First known African-Amer… Wentworth Cheswell, t… African-Ame… Social &amp; …
+## 4  1773 First known African-Amer… Phillis Wheatley (Poe… Female Afri… Arts &amp; En…
+## 5  1773 First separate African-A… Silver Bluff Baptist … African-Ame… Religion  
+## 6  1775 First African-American t… Prince Hall            African-Ame… Social &amp; …</code></pre>
+</div>
+<div id="v.-plots" class="section level2">
+<h2>V. Plots</h2>
+<pre class="r"><code>science %&lt;&gt;% 
+  filter(!is.na(death))
+  
+science %&gt;% 
+  ggplot(aes(x = birth, y = 0, label = name)) +
+  geom_point()</code></pre>
+<p><img src="/sessions/2020-06-24-tidy-tuesday-black-lives-matter_files/figure-html/plot-1.png" width="672" /></p>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/tidyverse/">tidyverse</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/sessions/tidy-tuesday-black-lives-matter/&amp;text=Tidy%20Tuesday:%20Black%20lives%20Matter" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/sessions/tidy-tuesday-black-lives-matter/&amp;t=Tidy%20Tuesday:%20Black%20lives%20Matter" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Tidy%20Tuesday:%20Black%20lives%20Matter&amp;body=/sessions/tidy-tuesday-black-lives-matter/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/sessions/tidy-tuesday-black-lives-matter/&amp;title=Tidy%20Tuesday:%20Black%20lives%20Matter" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Tidy%20Tuesday:%20Black%20lives%20Matter%20/sessions/tidy-tuesday-black-lives-matter/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/sessions/tidy-tuesday-black-lives-matter/&amp;title=Tidy%20Tuesday:%20Black%20lives%20Matter" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hud2a0c28589117e0043591c3782fdb764_45045_270x270_fill_lanczos_center_2.png" alt="">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/authors/admin/"></a></h5>
+        
+        <p class="card-text">This organization is dedicated to fostering an effective and supportive data science learning community at the University of Vermont.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://join.slack.com/t/dscore-uvm/shared_invite/zt-e53kis78-5K9T7fYV~4B27t_CnpI2lQ" target="_blank" rel="noopener">
+        <i class="fab fa-slack"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/vtdscore" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

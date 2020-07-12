@@ -1,0 +1,53 @@
+---
+title: Installing Packages
+author: Jeffrey Brabec
+date: '2020-06-26'
+slug: installing-packages
+categories:
+  - Tutorials
+tags: []
+---
+
+
+
+<div id="installing-packages" class="section level2">
+<h2>Installing Packages</h2>
+<p>As you start doing more advanced analyses in R (e.g. genetic or imaging; machine learning), there are times where you’ll need to install new packages that were written specifically to do those analyses. These packages can add completely new tools to your R toolbox, or they help optimize functions or outputs from base R and other R packages.</p>
+<p>So how do we install new packages? We’ve already used the most common way to download packages several times:</p>
+<pre class="r"><code>install.packages(&quot;tidyverse&quot;)</code></pre>
+<p>This function searches “The Comprehensive R Archive Network” or <a href="https://cran.r-project.org">CRAN</a> for the package(s) you pass to it. CRAN is a file transfer protocol (FTP) server with updated versions of all R packages maintained on CRAN. But it doesn’t have all R packages.</p>
+<p>If you want to install multiple packages at the same time without retyping <code>install.packages</code> you can pass a vector of package names to the install function:</p>
+<pre class="r"><code>to_install &lt;- c(&quot;tidyverse&quot;, &quot;gprofiler2&quot;, &quot;cowplot&quot;)
+install.packages(to_install)
+#OR
+install.packages(c(&quot;tidyverse&quot;, &quot;gprofiler2&quot;, &quot;cowplot&quot;))</code></pre>
+<p>The same thing can be done when you want to load your packages at the beginning of your workflow. Sometimes you could have upwards of 15 packages that you’re working with and its a pain to individually library each one:</p>
+<pre class="r"><code>to_load &lt;- c(&quot;tidyverse&quot;, &quot;gprofiler2&quot;, &quot;cowplot&quot;, &quot;Matrix&quot;, &quot;tidymodels&quot;)
+library(to_load)
+#OR
+library(c(&quot;tidyverse&quot;, &quot;gprofiler2&quot;, &quot;cowplot&quot;, &quot;Matrix&quot;, &quot;tidymodels&quot;))</code></pre>
+</div>
+<div id="devtools" class="section level1">
+<h1>Devtools</h1>
+<p>Sometimes you’ll run across someone who is in the process of developing a package that hasn’t been released on CRAN yet. They’ll often make development versions of their code available on GitHub for people to install and use prior to release of the full version. This not only gets the helpful tool the developer is creating out sooner, but it also allows people to road test the code and find any bugs prior to full release.</p>
+<p>To install a package that is still in development from GitHub you’ll need to first install the <code>devtools</code> pacakge from CRAN. It has several handy tools for people developing their own packages, but all we really need to use it for is getting those packages!</p>
+<p>In this case I want to download the TidyTuesdayR package which lets me easily read each week’s TidyTuesday data directly into R.</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)
+remotes()
+devtools::install_github(&quot;thebioengineer/tidytuesdayR&quot;) </code></pre>
+<p>To install the package you need to provide the username of the person with the package, and the repository in which they have the package. In this case “thebioengineer” is the one developing this package and he has all the relevant code needed to compile the package in the repository “tidytuesdayR”.</p>
+<p>However, as of June 26th the tidytuesdayR package is on CRAN so is now available to install using <code>install.packages()</code>.</p>
+<div id="bioconductor" class="section level2">
+<h2>Bioconductor</h2>
+<p>As biological scientists there is one final package collection that we’ll want to use if we’re doing any kind of genomic analyses and that is <a href="http://bioconductor.org">Bioconductor</a>. Bioconductor specifically maintains packages that you’ll need to do everything from accessing genomic data from online databases to doing advanced statistical analyses. As we continue diving into R we’ll do a deep dive on some of the most useful packages they provide.</p>
+<p>To install Bioconductor:</p>
+<pre class="r"><code>if (!requireNamespace(&quot;BiocManager&quot;, quietly = TRUE)) 
+    install.packages(&quot;BiocManager&quot;)
+BiocManager::install(version = &quot;3.11&quot;)</code></pre>
+<p>This snippet of code first checks if the package “BiocManager” is already downloaded. If it isn’t than the package is installed. Once its installed, the package has its own “install” function that allows you to update it to the latest version, in this case 3.11.</p>
+<p>That last line of code in the previous section is just how we’ll download packages from Bioconductor:</p>
+<pre class="r"><code>BiocManager::install(&quot;GEOquery&quot;)</code></pre>
+<p><code>GEOquery</code> is a useful package that we’ll use down the road. It provides an interface to the Gene Expression Omnibus or <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a> which is a repository of gene expression data from NIH funded projects.</p>
+<p>Those are the main ways that we’ll install packages in R! I hope you found this helpful!</p>
+</div>
+</div>

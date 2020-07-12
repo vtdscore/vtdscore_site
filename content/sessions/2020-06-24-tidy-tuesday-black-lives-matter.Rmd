@@ -1,0 +1,281 @@
+---
+title: 'Tidy Tuesday: Black lives Matter'
+author: Montana Kay Lara
+date: '2020-06-24'
+slug: tidy-tuesday-black-lives-matter
+categories:
+  - TidyTuesday
+tags:
+  - tidyverse
+---
+
+This workflow uses the African American Achievements Tidy Tuesday dataset, downloaded June 24, 2020, for the purposes of learning and education on the intersection of racial matters and data science. 
+
+## Outline
+I. Setup
+II. Data
+III. Clean Data
+IV. Look at Data
+V. Plots
+
+## I. Setup
+
+```{r packages}
+library(tidyverse)
+library(ggplot2)
+library(tidytuesdayR)
+
+#you would need the following packages if you were going to run the cleaning script instead of the II.Data grabs
+library(readr)
+library(xml2)
+library(rvest)
+library(janitor)
+library(purrr)
+library(stringr)
+library(tibble)
+library(here)
+library(magrittr)
+```
+
+## II. Data
+
+Dataset provided here: https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-06-09 
+```{r data_grab}
+# Get the Data viar readr read_csv
+firsts <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/firsts.csv')
+science <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/science.csv')
+
+# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Install via devtools::install_github("thebioengineer/tidytuesdayR")
+# Either ISO-8601 date or year/week works!
+tuesdata <- tidytuesdayR::tt_load('2020-06-09')
+tuesdata <- tidytuesdayR::tt_load(2020, week = 24)
+
+#Get the two datasets out of the tuesdata
+firsts <- tuesdata$firsts
+science <- tuesdata$science
+```
+
+
+## III. Clean Data
+
+Tidy tuesday provides their cleaning script used to make the two datasets - and it is worth at least looking at to see how they build these. 
+```{r clean_it_up_SCI, eval=FALSE}
+# URL 1
+url_science <- "https://en.wikipedia.org/wiki/List_of_African-American_inventors_and_scientists"
+raw_html_sci <- read_html(url_science)
+
+get_source <- function(x){
+  raw_html_sci %>% 
+    html_nodes("tbody") %>% 
+    .[[2]] %>% 
+    html_nodes(glue::glue("tr:nth-child({x})")) %>% 
+    html_nodes("td:nth-child(1) > a") %>% 
+    html_attr("href")
+}
+
+raw_sci_tab <- raw_html_sci %>% 
+  html_table(fill = TRUE) %>% 
+  .[[2]] %>% 
+  janitor::clean_names() %>% 
+  as_tibble() %>% 
+  mutate(links = map(row_number(), get_source))
+
+clean_sci <- raw_sci_tab %>% 
+  mutate(references = str_replace_all(references, "\\]", ","),
+         references = str_remove_all(references, "\\[")) %>% 
+  unnest(links) %>% 
+  mutate(links = paste0("https://en.wikipedia.org", links)) %>% 
+  separate(years, into = c("birth", "death"), sep = "–") %>% 
+  mutate(across(c(birth, death), as.integer)) %>% 
+  mutate(occupation_s = str_replace_all(occupation_s, ",", ";"))
+
+clean_sci %>% 
+  filter(str_detect(tolower(occupation_s), "statistician"))
+
+
+sci_citations <- raw_html_sci %>% 
+  html_node("#mw-content-text > div > div.reflist > div") %>% 
+  html_nodes("li") %>% 
+  html_text() %>% 
+  str_remove("\\^ ") %>% 
+  enframe() %>% 
+  rename(citation_num = name, citation = value) %>% 
+  mutate(citation = str_replace_all(citation, "\"", "'"),
+         citation = str_remove_all(citation, "\\n"))
+
+sci_citations
+
+clean_sci %>%
+  add_row(tibble(
+    name = "Amos, Harold", birth = 1918, death = 2003, occupation_s = "Microbiologist",
+    inventions_accomplishments = "First African-American department chair at Harvard Medical School",
+    references = "6,", links = "https://en.wikipedia.org/wiki/Harold_Amos"), .before = 1
+  )
+  
+write_csv(clean_sci, path = here("2020/2020-06-09/science.csv"))
+science <- read_csv("2020/2020-06-09/science.csv")
+```
+
+```{r clean_it_up_FIRSTS, eval=FALSE}
+first_url <- "https://en.wikipedia.org/wiki/List_of_African-American_firsts"
+raw_first <- read_html(first_url)
+
+get_year <- function(id_num) {
+  raw_first %>% 
+    html_nodes(glue::glue("#mw-content-text > div > h4:nth-child({id_num}) > span")) %>% 
+    html_attr("id") %>% 
+    .[!is.na(.)]
+}
+
+get_first <- function(id_num){
+  raw_first %>% 
+    html_nodes(glue::glue("#mw-content-text > div > ul:nth-child({id_num})")) %>% 
+    html_text() %>% 
+    str_split("\n")
+}
+
+tidyr::crossing(id_num = 9:389, count = 1:5)
+
+raw_first_df <- tibble(id_num = 9:390) %>% 
+  mutate(year = map(id_num, get_year),
+         text = map(id_num, get_first))
+
+clean_first <- raw_first_df %>% 
+  mutate(year = as.integer(year)) %>% 
+  fill(year) %>% 
+  unnest(text) %>% 
+  unnest(text) %>% 
+  separate(text, into = c("role", "person"), sep = ": ") %>% 
+  mutate(person = str_remove_all(person, "\\\\"),
+         person = str_trim(person),
+         role = str_replace(role, "African American", "African-American")) %>% 
+  select(year, role, person)
+
+clean_first %>% 
+  group_by(year) %>% 
+  summarize(n =n())
+
+first_role <- function(category){
+  str_detect(tolower(role), category)
+}
+
+edu <- paste0(c(
+  "practice", "graduate", "learning", "college", "university", "medicine",
+  "earn", "ph.d.", "professor", "teacher", "school", "nobel", "invent", "patent",
+  "medicine", "degree", "doctor", "medical", "nurse", "physician", "m.d.", "b.a.", "b.s.", "m.b.a",
+  "principal", "space", "astronaut"
+), collapse = "|")
+
+religion <- c("bishop", "rabbi", "minister", "church", "priest", "pastor", "missionary",
+              "denomination", "jesus", "jesuits", "diocese", "buddhis") %>%
+  paste0(collapse = "|")
+
+politics <- c(
+  "diplomat", "elected", "nominee", "supreme court", "legislature", "mayor", "governor",
+  "vice President", "president", "representatives", "political", "department", "peace prize",
+  "ambassador", "government", "white house", "postal", "federal", "union", "trade",
+  "delegate", "alder", "solicitor", "senator", "intelligience", "combat", "commissioner",
+  "state", "first lady", "cabinet", "advisor", "guard", "coast", "secretary", "senate",
+  "house", "agency", "staff", "national committee"
+) %>%
+  paste0(collapse = "|")
+
+sports <- c(
+  "baseball", "football", "basketball", "hockey", "golf", "tennis",
+  "championship", "boxing", "games", "medal", "game", "sport", "olympic", "nascar",
+  "coach", "trophy", "nba", "nhl", "nfl", "mlb", "stanley cup", "jockey", "pga",
+  "race", "driver", "ufc", "champion"
+) %>%
+  paste0(collapse = "|")
+
+military <- c(
+  "serve", "military", "enlist", "officer", "army", "marine", "naval",
+  "officer", "captain", "command", "admiral", "prison", "navy", "general",
+  "force"
+) %>%
+  paste0(collapse = "|")
+
+law <- c("american bar", "lawyer", "police", "judge", "attorney", "law", 
+         "agent", "fbi") %>%
+  paste0(collapse = "|")
+
+arts <- c(
+  "opera", "sing", "perform", "music", "billboard", "oscar", "television",
+  "movie", "network", "tony award", "paint", "author", "book", "academy award", "curator",
+  "director", "publish", "novel", "grammy", "emmy", "smithsonian",
+  "conduct", "picture", "pulitzer", "channel", "villain", "cartoon", "tv", "golden globe",
+  "comic", "magazine", "superhero", "pulitzer", "dancer", "opry", "rock and roll", "radio",
+  "record") %>%
+  paste0(collapse = "|")
+
+social <- c("community", "freemasons", "vote", "voting", "rights", "signature", 
+            "royal", "ceo", "community", "movement", "invited", "greek", "million",
+            "billion", "attendant", "chess", "pilot", "playboy", "own", "daughter",
+            "coin", "dollar", "stamp", "niagara",
+            "stock", "north pole", "reporter", "sail around the world", "press", "miss ",
+            "everest")  %>%
+  paste0(collapse = "|")
+
+first_df <- clean_first %>% 
+  mutate(gender = if_else(str_detect(role, "woman|Woman|her|she|female"), 
+                          "Female African American Firsts", "African-American Firsts"),
+         role = str_remove_all(role, "\""),
+         person = str_remove_all(person, "\""),
+         category = case_when(
+           str_detect(tolower(role), military) ~ "Military",
+           str_detect(tolower(role), law) ~ "Law",
+           str_detect(tolower(role), arts) ~ "Arts & Entertainment",
+           str_detect(tolower(role), social) ~ "Social & Jobs",
+           str_detect(tolower(role), religion) ~ "Religion",
+           str_detect(tolower(role), edu) ~ "Education & Science",
+           str_detect(tolower(role), politics) ~ "Politics",
+           str_detect(tolower(role), sports) ~ "Sports",
+           TRUE ~ NA_character_
+         )) %>% 
+  rename(accomplishment = role)
+
+first_df %>% write_csv(path = "2020/2020-06-09/firsts.csv")
+
+firsts <- read_csv("2020/2020-06-09/firsts.csv")
+
+plot_ex <- first_df %>% 
+  mutate(n = 1) %>% 
+  group_by(category) %>% 
+  mutate(roll_n = cumsum(n)) %>% 
+  ggplot(aes(x = year, y = roll_n, color = category)) +
+  geom_step(size = 1) +
+  theme(legend.position = "top") +
+  tomtom::theme_tomtom() +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 6)) +
+  scale_x_continuous(breaks = seq(1750, 2020, 25)) +
+  geom_hline(yintercept = 0, size = 1, color = "black") +
+  labs(x = "", y = "",
+       title = "Cumulative African-Americans firsts over time",
+       subtitle = "479 'Firsts' of African-Americans breaking the color barrier across a wide range of topics",
+       caption = "Data: wikipedia.org/wiki/List_of_African-American_firsts")
+
+ggsave("2020/2020-06-09/pic2.png", plot_ex, height = 8, width = 14, units = "in", dpi = "retina")
+```
+
+
+## IV. Look at Data
+
+```{r take_a_look}
+#use head(), str(), class(), View(), etc. to see what the tables look like
+head(science)
+head(firsts)
+
+```
+
+## V. Plots
+
+```{r plot}
+science %<>% 
+  filter(!is.na(death))
+  
+science %>% 
+  ggplot(aes(x = birth, y = 0, label = name)) +
+  geom_point()
+```
+

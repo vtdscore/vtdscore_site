@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UVM Data Science Core</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>UVM Data Science Core</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>UVM Data Science Core</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Useful books</title>
+      <link>/courses/resources/books/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/resources/books/</guid>
+      <description>&lt;br&gt;
+&lt;h2 id=&#34;visualization&#34;&gt;Visualization&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;William Cleveland, 
+&lt;a href=&#34;http://www.powells.com/biblio/73-9780963488411-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Elements of Graphing Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Colin Ware, 
+&lt;a href=&#34;http://www.powells.com/biblio/1-9780123814647-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Information Visualization: Perception for Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Stephen Kosslyn, 
+&lt;a href=&#34;http://www.powells.com/biblio/61-9780195311846-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Graph Design for Eye and Mind&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tamara Munzer, 
+&lt;a href=&#34;http://www.cs.ubc.ca/~tmm/vadbook/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Visualization Analysis and Design&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nathan Yau
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/1-9781118462195-4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Points&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/2-9780470944882-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visualize This&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stephen Few, 
+&lt;a href=&#34;http://www.powells.com/biblio/62-9780970601988-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Now You See It: Simple Visualization Techniques for Quantitative Analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Alberto Cairo
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/1-9780321834737-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Functional Art: An Introduction to Information Graphics and Visualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/book/truthful-art-data-charts-maps-for-communication-9780321934079/62-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Truthful Art: Data, Charts, and Maps for Communication&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Katy Börner, 
+&lt;a href=&#34;http://www.powells.com/biblio/62-9780262526197-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Insights: A Practical Guide to Making Sense of Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Joel Katz, 
+&lt;a href=&#34;http://www.powells.com/biblio/74-9781118341971-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Designing Information: Human Factors and Common Sense in Information Design&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Claus Wilke, 
+&lt;a href=&#34;http://serialmentor.com/dataviz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fundamentals of Data Visualization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Manuel Lima
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/1-9781616892197-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Complexity: Mapping Patterns of Information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/7-9781616892180-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Book of Trees: Visualizing Branches of Knowledge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Edward Tufte
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/1-9780961392147-8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Visual Display of Quantitative Information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/7-9780961392116-10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Envisioning Information&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/17-9780961392123-25&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Explanations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.powells.com/biblio/1-9780961392178-19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beautiful Evidence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Maureen Stone, 
+&lt;a href=&#34;http://www.annieblooms.com/book/9781568811611&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Field Guide to Digital Color&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rudolf Arnheim, 
+&lt;a href=&#34;http://www.powells.com/biblio/62-9780520242265-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Thinking&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scott McCloud, 
+&lt;a href=&#34;http://www.powells.com/biblio/65-9780613027823-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Understanding Comics: The Invisible Art&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Useful readings</title>
+      <link>/courses/resources/readings/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/resources/readings/</guid>
+      <description>&lt;br&gt;
+&lt;h2 id=&#34;papers&#34;&gt;Papers&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Brehmer M, Sedlmair M, Ingram S, Munzner T. 
+&lt;a href=&#34;http://dl.acm.org/citation.cfm?id=2669559&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visualizing Dimensionally-reduced Data: Interviews with Analysts and a Characterization of Task Sequences.&lt;/a&gt; Proc. Beyond Time &amp;amp; Errors: Novel Evaluation Methods For Information Visualization (BELIV) 2014. p. 1–8.&lt;/li&gt;
+&lt;li&gt;Borland D, Taylor MR. 
+&lt;a href=&#34;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&amp;amp;arnumber=4118486&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rainbow color map (still) considered harmful.&lt;/a&gt; IEEE computer graphics and applications. 2007 Mar;27(2):14–7.&lt;/li&gt;
+&lt;li&gt;Christensen DL, Baio J, Van Naarden Braun K, Bilder D, Charles J, Constantino JN, et al. 
+&lt;a href=&#34;http://www.cdc.gov/mmwr/volumes/65/ss/ss6503a1.htm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prevalence and Characteristics of Autism Spectrum Disorder Among Children Aged 8 Years&amp;ndash;Autism and Developmental Disabilities Monitoring Network, 11 Sites, United States, 2012.&lt;/a&gt; MMWR Surveillance summaries : Morbidity and mortality weekly report Surveillance summaries / CDC. 2016 Apr 1;65(3):1–23.&lt;/li&gt;
+&lt;li&gt;Cleveland WS, McGill R. 
+&lt;a href=&#34;http://www.tandfonline.com/doi/abs/10.1080/01621459.1984.10478080&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.&lt;/a&gt; Journal of the American Statistical Association. 1984;79(387):531–54.&lt;/li&gt;
+&lt;li&gt;Cleveland WS, Diaconis P, McGill R. 
+&lt;a href=&#34;http://science.sciencemag.org/content/216/4550/1138.full.pdf&amp;#43;html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Variables on Scatterplots Look More Highly Correlated When the Scales Are Increased.&lt;/a&gt; Science; 1982;216(4550):1138–41.&lt;/li&gt;
+&lt;li&gt;Dörk M, Feng P, Collins C, Carpendale S. 
+&lt;a href=&#34;http://portal.acm.org/citation.cfm?id=2468356.2468739&amp;amp;coll=DL&amp;amp;dl=GUIDE&amp;amp;CFID=460495180&amp;amp;CFTOKEN=15985043&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Critical InfoVis: exploring the politics of visualization.&lt;/a&gt; Proc. &amp;lsquo;CHI 2013.&lt;/li&gt;
+&lt;li&gt;Elliott, K. 
+&lt;a href=&#34;https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73#.l9wps0emh&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;39 studies about human perception in 30 minutes&amp;rdquo;&lt;/a&gt;; presented at OpenVis 2016.&lt;/li&gt;
+&lt;li&gt;Heer J, Bostock M. 
+&lt;a href=&#34;http://dl.acm.org/citation.cfm?id=1753357&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Crowdsourcing graphical perception: using mechanical turk to assess visualization design.&lt;/a&gt; ACM CHI &amp;lsquo;10; 2010. p. 203–12.&lt;/li&gt;
+&lt;li&gt;Kosara R. 
+&lt;a href=&#34;http://dl.acm.org/citation.cfm?doid=2993901.2993909&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;An Empire Built On Sand: Reexamining What We Think We Know About Visualization.&lt;/a&gt; in the Proceedings of the Sixth Workshop on Beyond Time and Errors on Novel Evaluation Methods for Visualization (BELIV &amp;lsquo;16) 2016. p. 162–8.&lt;/li&gt;
+&lt;li&gt;Krzywinski M, Altman N. 
+&lt;a href=&#34;http://www.nature.com/nmeth/journal/v10/n10/full/nmeth.2659.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Points of significance: error bars.&lt;/a&gt; Nat Meth. Nature Research; 2013 Oct;10(10):921–2.&lt;/li&gt;
+&lt;li&gt;Krzywinski M, Altman N. 
+&lt;a href=&#34;http://www.nature.com/nmeth/journal/v11/n2/full/nmeth.2813.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visualizing samples with box plots.&lt;/a&gt; Nat Meth. 2014 Feb;11(2):119–20.&lt;/li&gt;
+&lt;li&gt;Shneiderman B. 
+&lt;a href=&#34;http://www.ils.unc.edu/ISSS/ISSS_final_report.pdf#page=96&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Research agenda: Visual overviews for exploratory search.&lt;/a&gt; Information Seeking Support Systems. 2008;11:4.&lt;/li&gt;
+&lt;li&gt;Sedlmair M, Meyer M, Munzner T. 
+&lt;a href=&#34;http://www.cs.ubc.ca/labs/imager/tr/2012/dsm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Design Study Methodology: Reflections from the Trenches and the Stacks.&lt;/a&gt; IEEE Transactions on Visualization and Computer Graphics. 2012 Dec;18(12):2431–40.&lt;/li&gt;
+&lt;li&gt;Sedlmair M, Tatu A, Munzner T, Tory M. 
+&lt;a href=&#34;http://onlinelibrary.wiley.com/wol1/doi/10.1111/j.1467-8659.2012.03125.x/full&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Taxonomy of Visual Cluster Separation Factors.&lt;/a&gt; Computer Graphics Forum. 2012;31(3pt4):1335–44.&lt;/li&gt;
+&lt;li&gt;Sedlmair M, Munzner T, Tory M. 
+&lt;a href=&#34;http://www.cs.ubc.ca/labs/imager/tr/2013/ScatterplotEval/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Empirical Guidance on Scatterplot and Dimension Reduction Technique Choices.&lt;/a&gt; IEEE Transactions on Visualization and Computer Graphics. 2013 Dec;19(12):2634–43.&lt;/li&gt;
+&lt;li&gt;Weissgerber TL, Milic NM, Winham SJ, Garovic VD. 
+&lt;a href=&#34;http://dx.plos.org/10.1371/journal.pbio.1002128&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Beyond bar and line graphs: time for a new data presentation paradigm.&lt;/a&gt; PLoS Biol. Public Library of Science; 2015 Apr;13(4):e1002128.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;blog-posts-etc&#34;&gt;Blog posts, etc.&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The Why Axis&amp;rsquo;s 
+&lt;a href=&#34;http://thewhyaxis.info/gap-remake/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Mind the Gap: An Economic Chart Remake&amp;rdquo;&lt;/a&gt;, by Jon Schwabish&lt;/li&gt;
+&lt;li&gt;Notes on the 
+&lt;a href=&#34;http://imjustcreative.com/the-arabic-fedex-logo/2012/02/01/amp/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arabic FedEx logo&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Jenny Cham&amp;rsquo;s delightful &amp;ldquo;sketchnotes&amp;rdquo; from a 
+&lt;a href=&#34;http://jennycham.co.uk/2014/07/a-peek-into-the-world-of-data-visualisation-with-prof-munzner/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2014 seminar&lt;/a&gt; by the incomparable Tamara Munzner.&lt;/li&gt;
+&lt;li&gt;Randy Olson&amp;rsquo;s illustration of 
+&lt;a href=&#34;http://www.randalolson.com/2015/08/23/small-multiples-vs-animated-gifs-for-showing-changes-in-fertility-rates-over-time/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Small Multiples vs. Animated GIFs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Visual.ly&amp;rsquo;s 
+&lt;a href=&#34;http://visual.ly/color-emotion-guide&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Color Emotion Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a name=&#34;playfair&#34;&gt;&lt;/a&gt;I am very interested in William Playfair and the history of data visualization:
+&lt;ul&gt;
+&lt;li&gt;Atlas Obscura, 
+&lt;a href=&#34;http://www.atlasobscura.com/articles/the-scottish-scoundrel-who-changed-how-we-see-data&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Scottish Scoundrel Who Changed How We See Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lauren Klein, 
+&lt;a href=&#34;http://dhlab.lmc.gatech.edu/uncategorized/repairing-william-playfair-at-the-mla/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Repairing William Playfair at the MLA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Georgia Tech&amp;rsquo;s Digital Humanities Lab, 
+&lt;a href=&#34;http://dhlab.lmc.gatech.edu/repairing-william-playfair/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Repairing William Playfair&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neil Richards, 
+&lt;a href=&#34;https://questionsindataviz.wordpress.com/2016/10/09/when-is-a-visualisation-a-call-to-action/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;When is a visualisation a call to action?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Carl Zimmer (yes, &lt;em&gt;the&lt;/em&gt; Carl Zimmer) on genome graphs: 
+&lt;a href=&#34;https://www.statnews.com/2016/10/07/dna-genome-sequencing-new-maps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;As DNA reveals its secrets, scientists are assembling a new picture of humanity&lt;/a&gt;, with numerous examples of creative new ways to visualize genetic variation.&lt;/li&gt;
+&lt;li&gt;Ben Jones, 
+&lt;a href=&#34;http://dataremixed.com/2016/10/simple-tables-multiple-vizzes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;From Simple Tables to Multiple Vizzes&amp;rdquo;&lt;/a&gt;: an illustration of ten different ways to visualize the same table. What different stories pop out from the different visualizations?&lt;/li&gt;
+&lt;li&gt;Kristoffer Magnusson, 
+&lt;a href=&#34;http://rpsychologist.com/how-to-tell-when-error-bars-correspond-to-a-significant-p-value&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;How to tell when error bars correspond to a significant p-value&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Kyle Walker, 
+&lt;a href=&#34;http://walkerke.github.io/2015/04/map-or-chart/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Should you visualize data with a map or a chart? Thoughts from teaching introductory geography&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Lazaro Gamio (Washington Post), 
+&lt;a href=&#34;https://www.washingtonpost.com/graphics/politics/2016-election/how-election-maps-lie/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Election maps are telling you big lies about small things&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cartonerd, 
+&lt;a href=&#34;http://cartonerd.blogspot.de/2016/11/the-nyt-election-map.html?m=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The NYT election map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;vis4.net, 
+&lt;a href=&#34;http://vis4.net/blog/posts/to-cartogram-or-not-to-cartogram-the-brexit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Why we didn’t use a cartogram in the Brexit map&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Benjamin Hennig, 
+&lt;a href=&#34;http://geographical.co.uk/places/mapping/item/1805-cartogram-special-brexit&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cartogram Special – Brexit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tom Pearson (Financial Times), 
+&lt;a href=&#34;https://www.ft.com/content/3bfc0aac-4ccd-11e6-88c5-db83e98a590a&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Communicating with data — How the FT explained Brexit&lt;/a&gt;: &amp;ldquo;From early sketch to final dashboard, FT data visualisation experts explain the process&amp;rdquo;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Useful websites</title>
+      <link>/courses/resources/websites/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/resources/websites/</guid>
+      <description>&lt;br&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.visualisingdata.com/index.php/resources/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visualising Data&amp;rsquo;s &amp;ldquo;Resources&amp;rdquo; index&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.cs.ubc.ca/group/infovis/resources.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matt Brehmer&amp;rsquo;s Monster List Of Resources (from UBC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://o2.ohsu.edu/communications/services/index.cfm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OHSU Communications Office (Graphic Design services, etc.)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://helpmeviz.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;HelpMeViz&lt;/a&gt; (crowdsourced data visualization help)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;blogs&#34;&gt;Blogs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.thefunctionalart.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Functional Art&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://flowingdata.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;FlowingData&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://thewhyaxis.info&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Why Axis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://eagereyes.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;eagereyes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://blog.visual.ly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visua.ly&amp;rsquo;s blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://junkcharts.typepad.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junk Charts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://viz.wtf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WTF Visualizations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://setosa.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;setosa.io&lt;/a&gt; (nifty d3 demos!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;references--examples&#34;&gt;References &amp;amp; Examples&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;R Graph Compendia/Catalogs:&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://shinyapps.org/apps/RGraphCompendium/index.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Compendium of Clean Graphs in R&lt;/a&gt;, by Eric-Jan Wagenmakers and Quentin F. Gronau (&lt;em&gt;note: in &amp;ldquo;Base R&amp;rdquo;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://shinyapps.stat.ubc.ca/r-graph-catalog/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Graph Catalog&lt;/a&gt;, by Joanna Zhao and Jennifer Bryan (&lt;em&gt;note: in &lt;tt&gt;ggplot2&lt;/tt&gt;&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.markdowntutorial.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://cslu.ohsu.edu/~presmane/courses/ggplot-jamboree-heart.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer 2016 &lt;tt&gt;ggplot&lt;/tt&gt; OHSU Data Jamboree&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A useful 
+&lt;a href=&#34;http://nbviewer.ipython.org/github/mwaskom/seaborn/blob/master/examples/plotting_distributions.ipynb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tutorial&lt;/a&gt; on using the 
+&lt;a href=&#34;http://stanford.edu/~mwaskom/software/seaborn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Seaborn&lt;/a&gt; Python library for visualizing distributions.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://dansaber.wordpress.com/2016/10/02/a-dramatic-tour-through-pythons-data-visualization-landscape-including-ggplot-and-altair/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Dramatic Tour through Python’s Data Visualization Landscape (including ggplot and Altair)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The Washington Post&amp;rsquo;s 
+&lt;a href=&#34;https://www.washingtonpost.com/graphics/politics/2016-election/the-demographic-groups-fueling-the-election/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;demographic tug-of-war&amp;rdquo;&lt;/a&gt; visualization is a lovely illustration of how &lt;em&gt;&lt;strong&gt;not&lt;/strong&gt;&lt;/em&gt; to appropriately use color saturation and hue to encode information, and &lt;strong&gt;also&lt;/strong&gt; has misleading axes (both in unit spacing and direction)!&lt;/li&gt;
+&lt;li&gt;The New York Times&amp;rsquo; interactive 
+&lt;a href=&#34;http://www.nytimes.com/interactive/2016/upshot/clinton-trump-paths-to-win-election.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;The 1,024 Ways Clinton or Trump Can Win the Election&amp;rdquo;&lt;/a&gt; is a great use of interactivity as a data exploration tool.&lt;/li&gt;
+&lt;li&gt;Also from the NYT, 
+&lt;a href=&#34;http://www.nytimes.com/2016/10/07/upshot/your-surgeon-is-probably-a-republican-your-psychiatrist-probably-a-democrat.html?smprod=nytcore-iphone&amp;amp;smid=nytcore-iphone-share&amp;amp;_r=1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Your Surgeon Is Probably a Republican, Your Psychiatrist Probably a Democrat&amp;rdquo;&lt;/a&gt; makes excellent use of a graphs and charts to tell a very clear story. Also note their detailed description at the end of the article of how the data were collected!&lt;/li&gt;
+&lt;li&gt;The Washington Post&amp;rsquo;s 
+&lt;a href=&#34;https://www.washingtonpost.com/graphics/national/one-hundred-years-of-hurricanes/?%3Ftid%3D=sm_pg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;One Hundred Years of Hurricanes&amp;rdquo;&lt;/a&gt; is a nice example of small-multiples cartography along with color.&lt;/li&gt;
+&lt;li&gt;The New York Times&amp;rsquo; 
+&lt;a href=&#34;http://www.nytimes.com/2014/04/23/upshot/what-good-marathons-and-bad-investments-have-in-common.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;What Good Marathons and Bad Investments Have in Common&amp;rdquo;&lt;/a&gt; illustrates a good use of contrast and preattentive processing (plus is a very interesting story!).&lt;/li&gt;
+&lt;li&gt;From Our World In Data, a nice example of using color and saturation to highlight certain information, in a terrifying plot about 
+&lt;a href=&#34;https://ourworldindata.org/the-link-between-life-expectancy-and-health-spending-us-focus#life-expectancy-vs-health-expenditure-over-time-1970-2014ref&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Life Expectancy vs. Health Expenditure Over Time&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.win.tue.nl/%7Evanwijk/myriahedral/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Myriahedral map projections&lt;/a&gt; are interesting.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://pitchinteractive.com/latest/tilegrams-more-human-maps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tilegrams&lt;/a&gt; are a good alternative to a cartogram.&lt;/li&gt;
+&lt;li&gt;We do not recommend making bivariate chloropleth maps, but if you &lt;em&gt;must&lt;/em&gt;, 
+&lt;a href=&#34;http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&amp;rsquo;s a good tutorial&lt;/a&gt; on how to do it and what some of the considerations are.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources--tools&#34;&gt;Resources &amp;amp; Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://colorbrewer2.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ColorBrewer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://kuler.adobe.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adobe Kuler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://vrl.cs.brown.edu/color&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Colorgorical&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://photochrome.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Photochrome&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://idl.cs.washington.edu/projects/lyra/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lyra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Packages:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://cran.r-project.org/web/packages/janitor/vignettes/introduction.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;tt&gt;janitor&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://vincent.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vincent&lt;/a&gt; (Python-to-Vega generation library)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://mpld3.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mpld3&lt;/a&gt;, an implementation of &lt;tt&gt;matplotlib&lt;/tt&gt; on top of &lt;tt&gt;d3.js&lt;/tt&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Packages</title>
+      <link>/tutorials/installing-packages/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/tutorials/installing-packages/</guid>
+      <description>
+
+
+&lt;div id=&#34;installing-packages&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Installing Packages&lt;/h2&gt;
+&lt;p&gt;As you start doing more advanced analyses in R (e.g. genetic or imaging; machine learning), there are times where you’ll need to install new packages that were written specifically to do those analyses. These packages can add completely new tools to your R toolbox, or they help optimize functions or outputs from base R and other R packages.&lt;/p&gt;
+&lt;p&gt;So how do we install new packages? We’ve already used the most common way to download packages several times:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;tidyverse&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This function searches “The Comprehensive R Archive Network” or &lt;a href=&#34;https://cran.r-project.org&#34;&gt;CRAN&lt;/a&gt; for the package(s) you pass to it. CRAN is a file transfer protocol (FTP) server with updated versions of all R packages maintained on CRAN. But it doesn’t have all R packages.&lt;/p&gt;
+&lt;p&gt;If you want to install multiple packages at the same time without retyping &lt;code&gt;install.packages&lt;/code&gt; you can pass a vector of package names to the install function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;to_install &amp;lt;- c(&amp;quot;tidyverse&amp;quot;, &amp;quot;gprofiler2&amp;quot;, &amp;quot;cowplot&amp;quot;)
+install.packages(to_install)
+#OR
+install.packages(c(&amp;quot;tidyverse&amp;quot;, &amp;quot;gprofiler2&amp;quot;, &amp;quot;cowplot&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The same thing can be done when you want to load your packages at the beginning of your workflow. Sometimes you could have upwards of 15 packages that you’re working with and its a pain to individually library each one:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;to_load &amp;lt;- c(&amp;quot;tidyverse&amp;quot;, &amp;quot;gprofiler2&amp;quot;, &amp;quot;cowplot&amp;quot;, &amp;quot;Matrix&amp;quot;, &amp;quot;tidymodels&amp;quot;)
+library(to_load)
+#OR
+library(c(&amp;quot;tidyverse&amp;quot;, &amp;quot;gprofiler2&amp;quot;, &amp;quot;cowplot&amp;quot;, &amp;quot;Matrix&amp;quot;, &amp;quot;tidymodels&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;devtools&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Devtools&lt;/h1&gt;
+&lt;p&gt;Sometimes you’ll run across someone who is in the process of developing a package that hasn’t been released on CRAN yet. They’ll often make development versions of their code available on GitHub for people to install and use prior to release of the full version. This not only gets the helpful tool the developer is creating out sooner, but it also allows people to road test the code and find any bugs prior to full release.&lt;/p&gt;
+&lt;p&gt;To install a package that is still in development from GitHub you’ll need to first install the &lt;code&gt;devtools&lt;/code&gt; pacakge from CRAN. It has several handy tools for people developing their own packages, but all we really need to use it for is getting those packages!&lt;/p&gt;
+&lt;p&gt;In this case I want to download the TidyTuesdayR package which lets me easily read each week’s TidyTuesday data directly into R.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;quot;devtools&amp;quot;)
+remotes()
+devtools::install_github(&amp;quot;thebioengineer/tidytuesdayR&amp;quot;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To install the package you need to provide the username of the person with the package, and the repository in which they have the package. In this case “thebioengineer” is the one developing this package and he has all the relevant code needed to compile the package in the repository “tidytuesdayR”.&lt;/p&gt;
+&lt;p&gt;However, as of June 26th the tidytuesdayR package is on CRAN so is now available to install using &lt;code&gt;install.packages()&lt;/code&gt;.&lt;/p&gt;
+&lt;div id=&#34;bioconductor&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Bioconductor&lt;/h2&gt;
+&lt;p&gt;As biological scientists there is one final package collection that we’ll want to use if we’re doing any kind of genomic analyses and that is &lt;a href=&#34;http://bioconductor.org&#34;&gt;Bioconductor&lt;/a&gt;. Bioconductor specifically maintains packages that you’ll need to do everything from accessing genomic data from online databases to doing advanced statistical analyses. As we continue diving into R we’ll do a deep dive on some of the most useful packages they provide.&lt;/p&gt;
+&lt;p&gt;To install Bioconductor:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (!requireNamespace(&amp;quot;BiocManager&amp;quot;, quietly = TRUE)) 
+    install.packages(&amp;quot;BiocManager&amp;quot;)
+BiocManager::install(version = &amp;quot;3.11&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This snippet of code first checks if the package “BiocManager” is already downloaded. If it isn’t than the package is installed. Once its installed, the package has its own “install” function that allows you to update it to the latest version, in this case 3.11.&lt;/p&gt;
+&lt;p&gt;That last line of code in the previous section is just how we’ll download packages from Bioconductor:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;BiocManager::install(&amp;quot;GEOquery&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;GEOquery&lt;/code&gt; is a useful package that we’ll use down the road. It provides an interface to the Gene Expression Omnibus or &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/geo/&#34;&gt;GEO&lt;/a&gt; which is a repository of gene expression data from NIH funded projects.&lt;/p&gt;
+&lt;p&gt;Those are the main ways that we’ll install packages in R! I hope you found this helpful!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidy Tuesday: Black lives Matter</title>
+      <link>/sessions/tidy-tuesday-black-lives-matter/</link>
+      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/sessions/tidy-tuesday-black-lives-matter/</guid>
+      <description>
+
+
+&lt;p&gt;This workflow uses the African American Achievements Tidy Tuesday dataset, downloaded June 24, 2020, for the purposes of learning and education on the intersection of racial matters and data science.&lt;/p&gt;
+&lt;div id=&#34;outline&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Outline&lt;/h2&gt;
+&lt;p&gt;I. Setup
+II. Data
+III. Clean Data
+IV. Look at Data
+V. Plots&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;i.-setup&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;I. Setup&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.2     ✓ dplyr   1.0.0
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(tidytuesdayR)
+
+#you would need the following packages if you were going to run the cleaning script instead of the II.Data grabs
+library(readr)
+library(xml2)
+library(rvest)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;rvest&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:purrr&amp;#39;:
+## 
+##     pluck&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:readr&amp;#39;:
+## 
+##     guess_encoding&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(janitor)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;janitor&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following objects are masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     chisq.test, fisher.test&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(purrr)
+library(stringr)
+library(tibble)
+library(here)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## here() starts at /Users/jeffreybrabec/Documents/data_science_group/vtdscore_site&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(magrittr)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;magrittr&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:purrr&amp;#39;:
+## 
+##     set_names&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:tidyr&amp;#39;:
+## 
+##     extract&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ii.-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;II. Data&lt;/h2&gt;
+&lt;p&gt;Dataset provided here: &lt;a href=&#34;https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-06-09&#34; class=&#34;uri&#34;&gt;https://github.com/rfordatascience/tidytuesday/tree/master/data/2020/2020-06-09&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Get the Data viar readr read_csv
+firsts &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/firsts.csv&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Parsed with column specification:
+## cols(
+##   year = col_double(),
+##   accomplishment = col_character(),
+##   person = col_character(),
+##   gender = col_character(),
+##   category = col_character()
+## )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;science &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-09/science.csv&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Parsed with column specification:
+## cols(
+##   name = col_character(),
+##   birth = col_double(),
+##   death = col_double(),
+##   occupation_s = col_character(),
+##   inventions_accomplishments = col_character(),
+##   references = col_character(),
+##   links = col_character()
+## )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# Install via devtools::install_github(&amp;quot;thebioengineer/tidytuesdayR&amp;quot;)
+# Either ISO-8601 date or year/week works!
+tuesdata &amp;lt;- tidytuesdayR::tt_load(&amp;#39;2020-06-09&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Compiling #TidyTuesday Information for 2020-06-09 ----&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- There are 2 files available ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Starting Download ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Downloading file 1 of 2: `firsts.csv`
+##  Downloading file 2 of 2: `science.csv`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Download complete ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tuesdata &amp;lt;- tidytuesdayR::tt_load(2020, week = 24)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Compiling #TidyTuesday Information for 2020-06-09 ----&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- There are 2 files available ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Starting Download ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+##  Downloading file 1 of 2: `firsts.csv`
+##  Downloading file 2 of 2: `science.csv`&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## --- Download complete ---&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Get the two datasets out of the tuesdata
+firsts &amp;lt;- tuesdata$firsts
+science &amp;lt;- tuesdata$science&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;iii.-clean-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;III. Clean Data&lt;/h2&gt;
+&lt;p&gt;Tidy tuesday provides their cleaning script used to make the two datasets - and it is worth at least looking at to see how they build these.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# URL 1
+url_science &amp;lt;- &amp;quot;https://en.wikipedia.org/wiki/List_of_African-American_inventors_and_scientists&amp;quot;
+raw_html_sci &amp;lt;- read_html(url_science)
+
+get_source &amp;lt;- function(x){
+  raw_html_sci %&amp;gt;% 
+    html_nodes(&amp;quot;tbody&amp;quot;) %&amp;gt;% 
+    .[[2]] %&amp;gt;% 
+    html_nodes(glue::glue(&amp;quot;tr:nth-child({x})&amp;quot;)) %&amp;gt;% 
+    html_nodes(&amp;quot;td:nth-child(1) &amp;gt; a&amp;quot;) %&amp;gt;% 
+    html_attr(&amp;quot;href&amp;quot;)
+}
+
+raw_sci_tab &amp;lt;- raw_html_sci %&amp;gt;% 
+  html_table(fill = TRUE) %&amp;gt;% 
+  .[[2]] %&amp;gt;% 
+  janitor::clean_names() %&amp;gt;% 
+  as_tibble() %&amp;gt;% 
+  mutate(links = map(row_number(), get_source))
+
+clean_sci &amp;lt;- raw_sci_tab %&amp;gt;% 
+  mutate(references = str_replace_all(references, &amp;quot;\\]&amp;quot;, &amp;quot;,&amp;quot;),
+         references = str_remove_all(references, &amp;quot;\\[&amp;quot;)) %&amp;gt;% 
+  unnest(links) %&amp;gt;% 
+  mutate(links = paste0(&amp;quot;https://en.wikipedia.org&amp;quot;, links)) %&amp;gt;% 
+  separate(years, into = c(&amp;quot;birth&amp;quot;, &amp;quot;death&amp;quot;), sep = &amp;quot;–&amp;quot;) %&amp;gt;% 
+  mutate(across(c(birth, death), as.integer)) %&amp;gt;% 
+  mutate(occupation_s = str_replace_all(occupation_s, &amp;quot;,&amp;quot;, &amp;quot;;&amp;quot;))
+
+clean_sci %&amp;gt;% 
+  filter(str_detect(tolower(occupation_s), &amp;quot;statistician&amp;quot;))
+
+
+sci_citations &amp;lt;- raw_html_sci %&amp;gt;% 
+  html_node(&amp;quot;#mw-content-text &amp;gt; div &amp;gt; div.reflist &amp;gt; div&amp;quot;) %&amp;gt;% 
+  html_nodes(&amp;quot;li&amp;quot;) %&amp;gt;% 
+  html_text() %&amp;gt;% 
+  str_remove(&amp;quot;\\^ &amp;quot;) %&amp;gt;% 
+  enframe() %&amp;gt;% 
+  rename(citation_num = name, citation = value) %&amp;gt;% 
+  mutate(citation = str_replace_all(citation, &amp;quot;\&amp;quot;&amp;quot;, &amp;quot;&amp;#39;&amp;quot;),
+         citation = str_remove_all(citation, &amp;quot;\\n&amp;quot;))
+
+sci_citations
+
+clean_sci %&amp;gt;%
+  add_row(tibble(
+    name = &amp;quot;Amos, Harold&amp;quot;, birth = 1918, death = 2003, occupation_s = &amp;quot;Microbiologist&amp;quot;,
+    inventions_accomplishments = &amp;quot;First African-American department chair at Harvard Medical School&amp;quot;,
+    references = &amp;quot;6,&amp;quot;, links = &amp;quot;https://en.wikipedia.org/wiki/Harold_Amos&amp;quot;), .before = 1
+  )
+  
+write_csv(clean_sci, path = here(&amp;quot;2020/2020-06-09/science.csv&amp;quot;))
+science &amp;lt;- read_csv(&amp;quot;2020/2020-06-09/science.csv&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;first_url &amp;lt;- &amp;quot;https://en.wikipedia.org/wiki/List_of_African-American_firsts&amp;quot;
+raw_first &amp;lt;- read_html(first_url)
+
+get_year &amp;lt;- function(id_num) {
+  raw_first %&amp;gt;% 
+    html_nodes(glue::glue(&amp;quot;#mw-content-text &amp;gt; div &amp;gt; h4:nth-child({id_num}) &amp;gt; span&amp;quot;)) %&amp;gt;% 
+    html_attr(&amp;quot;id&amp;quot;) %&amp;gt;% 
+    .[!is.na(.)]
+}
+
+get_first &amp;lt;- function(id_num){
+  raw_first %&amp;gt;% 
+    html_nodes(glue::glue(&amp;quot;#mw-content-text &amp;gt; div &amp;gt; ul:nth-child({id_num})&amp;quot;)) %&amp;gt;% 
+    html_text() %&amp;gt;% 
+    str_split(&amp;quot;\n&amp;quot;)
+}
+
+tidyr::crossing(id_num = 9:389, count = 1:5)
+
+raw_first_df &amp;lt;- tibble(id_num = 9:390) %&amp;gt;% 
+  mutate(year = map(id_num, get_year),
+         text = map(id_num, get_first))
+
+clean_first &amp;lt;- raw_first_df %&amp;gt;% 
+  mutate(year = as.integer(year)) %&amp;gt;% 
+  fill(year) %&amp;gt;% 
+  unnest(text) %&amp;gt;% 
+  unnest(text) %&amp;gt;% 
+  separate(text, into = c(&amp;quot;role&amp;quot;, &amp;quot;person&amp;quot;), sep = &amp;quot;: &amp;quot;) %&amp;gt;% 
+  mutate(person = str_remove_all(person, &amp;quot;\\\\&amp;quot;),
+         person = str_trim(person),
+         role = str_replace(role, &amp;quot;African American&amp;quot;, &amp;quot;African-American&amp;quot;)) %&amp;gt;% 
+  select(year, role, person)
+
+clean_first %&amp;gt;% 
+  group_by(year) %&amp;gt;% 
+  summarize(n =n())
+
+first_role &amp;lt;- function(category){
+  str_detect(tolower(role), category)
+}
+
+edu &amp;lt;- paste0(c(
+  &amp;quot;practice&amp;quot;, &amp;quot;graduate&amp;quot;, &amp;quot;learning&amp;quot;, &amp;quot;college&amp;quot;, &amp;quot;university&amp;quot;, &amp;quot;medicine&amp;quot;,
+  &amp;quot;earn&amp;quot;, &amp;quot;ph.d.&amp;quot;, &amp;quot;professor&amp;quot;, &amp;quot;teacher&amp;quot;, &amp;quot;school&amp;quot;, &amp;quot;nobel&amp;quot;, &amp;quot;invent&amp;quot;, &amp;quot;patent&amp;quot;,
+  &amp;quot;medicine&amp;quot;, &amp;quot;degree&amp;quot;, &amp;quot;doctor&amp;quot;, &amp;quot;medical&amp;quot;, &amp;quot;nurse&amp;quot;, &amp;quot;physician&amp;quot;, &amp;quot;m.d.&amp;quot;, &amp;quot;b.a.&amp;quot;, &amp;quot;b.s.&amp;quot;, &amp;quot;m.b.a&amp;quot;,
+  &amp;quot;principal&amp;quot;, &amp;quot;space&amp;quot;, &amp;quot;astronaut&amp;quot;
+), collapse = &amp;quot;|&amp;quot;)
+
+religion &amp;lt;- c(&amp;quot;bishop&amp;quot;, &amp;quot;rabbi&amp;quot;, &amp;quot;minister&amp;quot;, &amp;quot;church&amp;quot;, &amp;quot;priest&amp;quot;, &amp;quot;pastor&amp;quot;, &amp;quot;missionary&amp;quot;,
+              &amp;quot;denomination&amp;quot;, &amp;quot;jesus&amp;quot;, &amp;quot;jesuits&amp;quot;, &amp;quot;diocese&amp;quot;, &amp;quot;buddhis&amp;quot;) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+politics &amp;lt;- c(
+  &amp;quot;diplomat&amp;quot;, &amp;quot;elected&amp;quot;, &amp;quot;nominee&amp;quot;, &amp;quot;supreme court&amp;quot;, &amp;quot;legislature&amp;quot;, &amp;quot;mayor&amp;quot;, &amp;quot;governor&amp;quot;,
+  &amp;quot;vice President&amp;quot;, &amp;quot;president&amp;quot;, &amp;quot;representatives&amp;quot;, &amp;quot;political&amp;quot;, &amp;quot;department&amp;quot;, &amp;quot;peace prize&amp;quot;,
+  &amp;quot;ambassador&amp;quot;, &amp;quot;government&amp;quot;, &amp;quot;white house&amp;quot;, &amp;quot;postal&amp;quot;, &amp;quot;federal&amp;quot;, &amp;quot;union&amp;quot;, &amp;quot;trade&amp;quot;,
+  &amp;quot;delegate&amp;quot;, &amp;quot;alder&amp;quot;, &amp;quot;solicitor&amp;quot;, &amp;quot;senator&amp;quot;, &amp;quot;intelligience&amp;quot;, &amp;quot;combat&amp;quot;, &amp;quot;commissioner&amp;quot;,
+  &amp;quot;state&amp;quot;, &amp;quot;first lady&amp;quot;, &amp;quot;cabinet&amp;quot;, &amp;quot;advisor&amp;quot;, &amp;quot;guard&amp;quot;, &amp;quot;coast&amp;quot;, &amp;quot;secretary&amp;quot;, &amp;quot;senate&amp;quot;,
+  &amp;quot;house&amp;quot;, &amp;quot;agency&amp;quot;, &amp;quot;staff&amp;quot;, &amp;quot;national committee&amp;quot;
+) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+sports &amp;lt;- c(
+  &amp;quot;baseball&amp;quot;, &amp;quot;football&amp;quot;, &amp;quot;basketball&amp;quot;, &amp;quot;hockey&amp;quot;, &amp;quot;golf&amp;quot;, &amp;quot;tennis&amp;quot;,
+  &amp;quot;championship&amp;quot;, &amp;quot;boxing&amp;quot;, &amp;quot;games&amp;quot;, &amp;quot;medal&amp;quot;, &amp;quot;game&amp;quot;, &amp;quot;sport&amp;quot;, &amp;quot;olympic&amp;quot;, &amp;quot;nascar&amp;quot;,
+  &amp;quot;coach&amp;quot;, &amp;quot;trophy&amp;quot;, &amp;quot;nba&amp;quot;, &amp;quot;nhl&amp;quot;, &amp;quot;nfl&amp;quot;, &amp;quot;mlb&amp;quot;, &amp;quot;stanley cup&amp;quot;, &amp;quot;jockey&amp;quot;, &amp;quot;pga&amp;quot;,
+  &amp;quot;race&amp;quot;, &amp;quot;driver&amp;quot;, &amp;quot;ufc&amp;quot;, &amp;quot;champion&amp;quot;
+) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+military &amp;lt;- c(
+  &amp;quot;serve&amp;quot;, &amp;quot;military&amp;quot;, &amp;quot;enlist&amp;quot;, &amp;quot;officer&amp;quot;, &amp;quot;army&amp;quot;, &amp;quot;marine&amp;quot;, &amp;quot;naval&amp;quot;,
+  &amp;quot;officer&amp;quot;, &amp;quot;captain&amp;quot;, &amp;quot;command&amp;quot;, &amp;quot;admiral&amp;quot;, &amp;quot;prison&amp;quot;, &amp;quot;navy&amp;quot;, &amp;quot;general&amp;quot;,
+  &amp;quot;force&amp;quot;
+) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+law &amp;lt;- c(&amp;quot;american bar&amp;quot;, &amp;quot;lawyer&amp;quot;, &amp;quot;police&amp;quot;, &amp;quot;judge&amp;quot;, &amp;quot;attorney&amp;quot;, &amp;quot;law&amp;quot;, 
+         &amp;quot;agent&amp;quot;, &amp;quot;fbi&amp;quot;) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+arts &amp;lt;- c(
+  &amp;quot;opera&amp;quot;, &amp;quot;sing&amp;quot;, &amp;quot;perform&amp;quot;, &amp;quot;music&amp;quot;, &amp;quot;billboard&amp;quot;, &amp;quot;oscar&amp;quot;, &amp;quot;television&amp;quot;,
+  &amp;quot;movie&amp;quot;, &amp;quot;network&amp;quot;, &amp;quot;tony award&amp;quot;, &amp;quot;paint&amp;quot;, &amp;quot;author&amp;quot;, &amp;quot;book&amp;quot;, &amp;quot;academy award&amp;quot;, &amp;quot;curator&amp;quot;,
+  &amp;quot;director&amp;quot;, &amp;quot;publish&amp;quot;, &amp;quot;novel&amp;quot;, &amp;quot;grammy&amp;quot;, &amp;quot;emmy&amp;quot;, &amp;quot;smithsonian&amp;quot;,
+  &amp;quot;conduct&amp;quot;, &amp;quot;picture&amp;quot;, &amp;quot;pulitzer&amp;quot;, &amp;quot;channel&amp;quot;, &amp;quot;villain&amp;quot;, &amp;quot;cartoon&amp;quot;, &amp;quot;tv&amp;quot;, &amp;quot;golden globe&amp;quot;,
+  &amp;quot;comic&amp;quot;, &amp;quot;magazine&amp;quot;, &amp;quot;superhero&amp;quot;, &amp;quot;pulitzer&amp;quot;, &amp;quot;dancer&amp;quot;, &amp;quot;opry&amp;quot;, &amp;quot;rock and roll&amp;quot;, &amp;quot;radio&amp;quot;,
+  &amp;quot;record&amp;quot;) %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+social &amp;lt;- c(&amp;quot;community&amp;quot;, &amp;quot;freemasons&amp;quot;, &amp;quot;vote&amp;quot;, &amp;quot;voting&amp;quot;, &amp;quot;rights&amp;quot;, &amp;quot;signature&amp;quot;, 
+            &amp;quot;royal&amp;quot;, &amp;quot;ceo&amp;quot;, &amp;quot;community&amp;quot;, &amp;quot;movement&amp;quot;, &amp;quot;invited&amp;quot;, &amp;quot;greek&amp;quot;, &amp;quot;million&amp;quot;,
+            &amp;quot;billion&amp;quot;, &amp;quot;attendant&amp;quot;, &amp;quot;chess&amp;quot;, &amp;quot;pilot&amp;quot;, &amp;quot;playboy&amp;quot;, &amp;quot;own&amp;quot;, &amp;quot;daughter&amp;quot;,
+            &amp;quot;coin&amp;quot;, &amp;quot;dollar&amp;quot;, &amp;quot;stamp&amp;quot;, &amp;quot;niagara&amp;quot;,
+            &amp;quot;stock&amp;quot;, &amp;quot;north pole&amp;quot;, &amp;quot;reporter&amp;quot;, &amp;quot;sail around the world&amp;quot;, &amp;quot;press&amp;quot;, &amp;quot;miss &amp;quot;,
+            &amp;quot;everest&amp;quot;)  %&amp;gt;%
+  paste0(collapse = &amp;quot;|&amp;quot;)
+
+first_df &amp;lt;- clean_first %&amp;gt;% 
+  mutate(gender = if_else(str_detect(role, &amp;quot;woman|Woman|her|she|female&amp;quot;), 
+                          &amp;quot;Female African American Firsts&amp;quot;, &amp;quot;African-American Firsts&amp;quot;),
+         role = str_remove_all(role, &amp;quot;\&amp;quot;&amp;quot;),
+         person = str_remove_all(person, &amp;quot;\&amp;quot;&amp;quot;),
+         category = case_when(
+           str_detect(tolower(role), military) ~ &amp;quot;Military&amp;quot;,
+           str_detect(tolower(role), law) ~ &amp;quot;Law&amp;quot;,
+           str_detect(tolower(role), arts) ~ &amp;quot;Arts &amp;amp; Entertainment&amp;quot;,
+           str_detect(tolower(role), social) ~ &amp;quot;Social &amp;amp; Jobs&amp;quot;,
+           str_detect(tolower(role), religion) ~ &amp;quot;Religion&amp;quot;,
+           str_detect(tolower(role), edu) ~ &amp;quot;Education &amp;amp; Science&amp;quot;,
+           str_detect(tolower(role), politics) ~ &amp;quot;Politics&amp;quot;,
+           str_detect(tolower(role), sports) ~ &amp;quot;Sports&amp;quot;,
+           TRUE ~ NA_character_
+         )) %&amp;gt;% 
+  rename(accomplishment = role)
+
+first_df %&amp;gt;% write_csv(path = &amp;quot;2020/2020-06-09/firsts.csv&amp;quot;)
+
+firsts &amp;lt;- read_csv(&amp;quot;2020/2020-06-09/firsts.csv&amp;quot;)
+
+plot_ex &amp;lt;- first_df %&amp;gt;% 
+  mutate(n = 1) %&amp;gt;% 
+  group_by(category) %&amp;gt;% 
+  mutate(roll_n = cumsum(n)) %&amp;gt;% 
+  ggplot(aes(x = year, y = roll_n, color = category)) +
+  geom_step(size = 1) +
+  theme(legend.position = &amp;quot;top&amp;quot;) +
+  tomtom::theme_tomtom() +
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 6)) +
+  scale_x_continuous(breaks = seq(1750, 2020, 25)) +
+  geom_hline(yintercept = 0, size = 1, color = &amp;quot;black&amp;quot;) +
+  labs(x = &amp;quot;&amp;quot;, y = &amp;quot;&amp;quot;,
+       title = &amp;quot;Cumulative African-Americans firsts over time&amp;quot;,
+       subtitle = &amp;quot;479 &amp;#39;Firsts&amp;#39; of African-Americans breaking the color barrier across a wide range of topics&amp;quot;,
+       caption = &amp;quot;Data: wikipedia.org/wiki/List_of_African-American_firsts&amp;quot;)
+
+ggsave(&amp;quot;2020/2020-06-09/pic2.png&amp;quot;, plot_ex, height = 8, width = 14, units = &amp;quot;in&amp;quot;, dpi = &amp;quot;retina&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;iv.-look-at-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;IV. Look at Data&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#use head(), str(), class(), View(), etc. to see what the tables look like
+head(science)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 7
+##   name    birth death occupation_s  inventions_accomplish… references links     
+##   &amp;lt;chr&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;         &amp;lt;chr&amp;gt;                  &amp;lt;chr&amp;gt;      &amp;lt;chr&amp;gt;     
+## 1 Amos, …  1918  2003 Microbiologi… First African-America… 6,         https://e…
+## 2 Alcorn…  1940    NA Physicist; i… Invented a method of … 7,8,       https://e…
+## 3 Andrew…  1930  1998 Mathematician Put forth the Andrews… 9,         https://e…
+## 4 Alexan…  1888  1958 Civil engine… Responsible for the c… &amp;lt;NA&amp;gt;       https://e…
+## 5 Bailey…  1825  1918 Inventor      Folding bed            10,        https://e…
+## 6 Ball, …  1892  1916 Chemist       Extracted chaulmoogra… 11,        https://e…&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(firsts)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 5
+##    year accomplishment            person                 gender       category  
+##   &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;                     &amp;lt;chr&amp;gt;                  &amp;lt;chr&amp;gt;        &amp;lt;chr&amp;gt;     
+## 1  1738 First free African-Ameri… Gracia Real de Santa … African-Ame… Social &amp;amp; …
+## 2  1760 First known African-Amer… Jupiter Hammon (poem … Female Afri… Arts &amp;amp; En…
+## 3  1768 First known African-Amer… Wentworth Cheswell, t… African-Ame… Social &amp;amp; …
+## 4  1773 First known African-Amer… Phillis Wheatley (Poe… Female Afri… Arts &amp;amp; En…
+## 5  1773 First separate African-A… Silver Bluff Baptist … African-Ame… Religion  
+## 6  1775 First African-American t… Prince Hall            African-Ame… Social &amp;amp; …&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;v.-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;V. Plots&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;science %&amp;lt;&amp;gt;% 
+  filter(!is.na(death))
+  
+science %&amp;gt;% 
+  ggplot(aes(x = birth, y = 0, label = name)) +
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-06-24-tidy-tuesday-black-lives-matter_files/figure-html/plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First Post!</title>
+      <link>/post/first-post/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/first-post/</guid>
+      <description>
+
+
+&lt;div id=&#34;in-this-section-well-post-blog-style-documents-where-we-discuss-very-specific-topics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;In this section we’ll post blog-style documents where we discuss very specific topics!&lt;/h1&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression with the Marbles Dataset</title>
+      <link>/sessions/linear-regression-with-the-marbles-dataset/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/sessions/linear-regression-with-the-marbles-dataset/</guid>
+      <description>
+
+
+&lt;div id=&#34;setting-up&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Setting Up&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)
+library(tidymodels)
+
+#This will read the marbles.csv directly into your environment --&amp;gt;
+marbles &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-06-02/marbles.csv&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;reviewing-last-week&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Reviewing Last Week&lt;/h2&gt;
+&lt;p&gt;In our previous sesion we did some exploratory data analysis of last week’s TidyTuesday data set which had race information from the previous season of &lt;a href=&#34;https://www.youtube.com/channel/UCYJdpnjuSWVOLgGT9fIzL0g&#34;&gt;Jelle’s Marble Runs&lt;/a&gt;. The data included information on the place of each marble in the 8 races of the season, individual marble names, lap times, and the number of points earned for finishing place.&lt;/p&gt;
+&lt;p&gt;We took the data that was provided and we used a few data wrangling tricks to add five additional columns. The first two columns, &lt;code&gt;points_sum&lt;/code&gt; and &lt;code&gt;points_cum&lt;/code&gt; tracked the total number of points earned by a team at the end of the season and the cumulative points earned after each race. These two additional columns allowed us to then calculate the rank of each team at the end of a race, and the final overall rank of the teams at the end of the season.&lt;/p&gt;
+&lt;p&gt;We also added a column that just lists the race number (&lt;code&gt;race_num&lt;/code&gt;) instead of the “S#R#” format used by the dataset and another that contains abbreviated team names (&lt;code&gt;team_abbr&lt;/code&gt;).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;marbles_rank &amp;lt;- marbles %&amp;gt;% 
+  select(race, marble_name, team_name, points, time_s, pole) %&amp;gt;% #Selects a specific subset of columns
+  filter(str_detect(race, &amp;quot;R&amp;quot;)) %&amp;gt;% #Filters the rows of your data.frame to only include races that determine end of season ranking
+  group_by(race, team_name) %&amp;gt;% 
+  summarize(points = unique(points)) %&amp;gt;% 
+  group_by(team_name) %&amp;gt;% 
+  arrange(team_name, race) %&amp;gt;% 
+  mutate( #this step adds to new columns called points_sum and points_cumulative
+    points_sum = sum(points), #total points at the end of the season
+    points_cumulative = cumsum(points) #The sum of points for a team after each race
+  ) %&amp;gt;% 
+  group_by(race) %&amp;gt;% 
+  arrange(-points_cumulative, points_sum) %&amp;gt;% #sort your rows so that the highest scoring team is at the top
+  mutate(rank = row_number()) %&amp;gt;% #calculate rank based on row_number of a team
+  ungroup() %&amp;gt;% #we&amp;#39;ve grouped a lot of data here but be sure to ungroup it all before doing any kind of plotting! You&amp;#39;ll get some funky looking figures
+  mutate( #here we&amp;#39;re adding two new columns and changing the factor levels of another
+    race_num = as.numeric(str_remove(race, &amp;quot;S1R&amp;quot;)), #making a column that just lists the race number
+    team_name = fct_reorder(team_name, -points_sum), #This is reordering the factor levels of the team_name column. I can go into a deeper explanation in our next session
+    team_abbr = case_when( #since the team names are long and will make a plot misshapen, we&amp;#39;re going to make a column with team abbreviations
+      team_name == &amp;quot;Savage Speeders&amp;quot; ~ &amp;quot;SAV&amp;quot;,
+      team_name == &amp;quot;Hazers&amp;quot; ~ &amp;quot;HAZ&amp;quot;,
+      team_name == &amp;quot;O&amp;#39;rangers&amp;quot; ~ &amp;quot;ORA&amp;quot;,
+      team_name == &amp;quot;Snowballs&amp;quot; ~ &amp;quot;SNO&amp;quot;,
+      team_name == &amp;quot;Green Ducks&amp;quot; ~ &amp;quot;GDK&amp;quot;,
+      team_name == &amp;quot;Team Galactic&amp;quot; ~ &amp;quot;TGL&amp;quot;,
+      team_name == &amp;quot;Team Primary&amp;quot; ~ &amp;quot;TPR&amp;quot;,
+      team_name == &amp;quot;Team Momo&amp;quot; ~ &amp;quot;TMO&amp;quot;,
+      team_name == &amp;quot;Thunderbolts&amp;quot; ~ &amp;quot;TDB&amp;quot;,
+      team_name == &amp;quot;Balls of Chaos&amp;quot; ~ &amp;quot;BOC&amp;quot;,
+      team_name == &amp;quot;Mellow Yellow&amp;quot; ~ &amp;quot;MYL&amp;quot;,
+      team_name == &amp;quot;Midnight Wisps&amp;quot; ~ &amp;quot;MNW&amp;quot;,
+      team_name == &amp;quot;Rojo Rollers&amp;quot; ~ &amp;quot;RJR&amp;quot;,
+      team_name == &amp;quot;Raspberry Racers&amp;quot; ~ &amp;quot;RBR&amp;quot;,
+      team_name == &amp;quot;Limers&amp;quot; ~ &amp;quot;LMR&amp;quot;,
+      team_name == &amp;quot;Hornets&amp;quot; ~ &amp;quot;HOR&amp;quot;
+    )
+  )&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After we cleaned our data I used a plotting workflow I found on &lt;a href=&#34;https://github.com/Z3tt/TidyTuesday/blob/master/R/2020_23_MarbleRaces.Rmd&#34;&gt;GitHub&lt;/a&gt; to generate our final figure:
+&lt;img src=&#34;/Users/jeffreybrabec/Documents/data_science_group/Images/marble_rankings.png&#34; width=&#34;1800&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This figure nicely illustrates how team rankings changed from race to race. But after seeing how drastically some of the rankings changed over the course of the season, I was left with some questions:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;How important is the final race in determining a team’s overall ranking for the season?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Does performance in the initial race predict performance in the final race (and rank at the end of the season)?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How does starting position affect finishing place in a race?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Today, we’re going to try to answer all of these questions using a relationship modeling method called &lt;a href=&#34;https://en.wikipedia.org/wiki/Linear_regression&#34;&gt;Linear Regression&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;linear-regression&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Linear Regression&lt;/h2&gt;
+&lt;p&gt;Before we dive into the regression analysis there is a bit more data wrangling that we need to do. First I want to make sure that I have the starting position (&lt;code&gt;pole&lt;/code&gt; in the data) of each marble for each race, which is determined by their qualifying lap time. The &lt;code&gt;pole&lt;/code&gt; position is only listed in the qualifying race rows while all the other information I care about is in the actual race rows. I need to remedy that before I move on.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;####USE INNERJOIN HERE ALONG WITH THIS METHOD
+quals &amp;lt;- marbles %&amp;gt;% 
+  select(race, team_name, marble_name, points, time_s, pole, site) %&amp;gt;% 
+  filter(str_detect(race, &amp;quot;Q&amp;quot;)) %&amp;gt;% 
+  group_by(race, team_name) %&amp;gt;% 
+  arrange(race, team_name)
+
+start_and_finish &amp;lt;- marbles_rank %&amp;gt;% 
+  arrange(race, as.character(team_name)) %&amp;gt;% 
+  mutate(start_pos = as.numeric(str_remove(quals$pole, &amp;quot;P&amp;quot;)), site = quals$site)&lt;/code&gt;&lt;/pre&gt;
+&lt;table style=&#34;width:100%;&#34;&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-4&#34;&gt;Table 1: &lt;/span&gt;Race Data with Starting Position&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;4%&#34; /&gt;
+&lt;col width=&#34;14%&#34; /&gt;
+&lt;col width=&#34;6%&#34; /&gt;
+&lt;col width=&#34;10%&#34; /&gt;
+&lt;col width=&#34;16%&#34; /&gt;
+&lt;col width=&#34;4%&#34; /&gt;
+&lt;col width=&#34;8%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;9%&#34; /&gt;
+&lt;col width=&#34;15%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;race&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;team_name&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;points&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;points_sum&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;points_cumulative&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;rank&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;race_num&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;team_abbr&lt;/th&gt;
+&lt;th align=&#34;right&#34;&gt;start_pos&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;site&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Balls of Chaos&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;46&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;BOC&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;15&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Green Ducks&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;64&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;GDK&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;10&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Hazers&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;94&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;18&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;HAZ&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Hornets&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;11&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;HOR&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;8&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Limers&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;25&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;12&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;LMR&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;14&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;S1R1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Mellow Yellow&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;44&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;9&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;MYL&lt;/td&gt;
+&lt;td align=&#34;right&#34;&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Savage Speedway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;visual-exploration&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Visual Exploration&lt;/h2&gt;
+&lt;p&gt;Before we start throwing linear regression models around whilly nilly lets take a look at the relationships we want to model. This serves a dual purpose: 1) it allows us to &lt;em&gt;literally&lt;/em&gt; see the relationships we want to analyze, and 2) it gives us an opportunity to explore other relationships we might not have previously considered examining.&lt;/p&gt;
+&lt;div id=&#34;what-does-it-look-like-when-we-plot-all-the-races-together&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;What does it look like when we plot all the races together?&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;start_and_finish %&amp;gt;% 
+  ggplot(aes(start_pos, rank)) + 
+  geom_point(aes(color = team_abbr)) +
+  geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE) +
+  labs(x = &amp;quot;Starting Position&amp;quot;,
+       y = &amp;quot;Finishing Place&amp;quot;,
+       color = &amp;quot;Team&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-06-22-linear-regression-with-the-marbles-dataset_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Not the cleanest linear relationship I’ve ever seen… but let’s build a model and see!&lt;/p&gt;
+&lt;p&gt;To do this we’re going to use a new family of “tidy” packages called &lt;a href=&#34;https://www.tidymodels.org&#34;&gt;tidymodels&lt;/a&gt;. Like the &lt;code&gt;tidyverse&lt;/code&gt; this collection of functions make doing statistical analyses and modeling easier, the syntax more intuitive, and the output cleaner. This is very new to me so we’ll be learning this functions together!&lt;/p&gt;
+&lt;p&gt;First we’ll need to define teh model that we care about. In this case we want to model how starting or pole position affects a marble’s finishing rank in the race:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#First let&amp;#39;s define the model we care about
+rank ~ start_pos&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## rank ~ start_pos&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We’ve seen the tilde before. In this case we’re using it to create a model object and we can read it as &lt;em&gt;rank depends on starting position&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To define the methodology we want to use we’ll implement some functions from the &lt;a href=&#34;https://parsnip.tidymodels.org&#34;&gt;parsnip&lt;/a&gt; package. This package takes model building and lets you organically define the various parameters without having to deal with the clunky base R functions. Stay tuned for future sessions when this definition gets better!&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#We want to specify our model type by declaring it:
+linear_reg()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Linear Regression Model Specification (regression)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Doing this really has no functionality. Its akin to just typing &lt;code&gt;ggplot&lt;/code&gt;. It just provides important information that downstream functions need to plot properly but doesn’t do anything itself.&lt;/p&gt;
+&lt;p&gt;To define the thing that will be fitting the model we need to specify and &lt;strong&gt;engine&lt;/strong&gt;. We’ll be using the &lt;code&gt;lm&lt;/code&gt; engine:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;linear_reg() %&amp;gt;% 
+  set_engine(&amp;quot;lm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Linear Regression Model Specification (regression)
+## 
+## Computational engine: lm&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And we can save this as a model object which we’ll call &lt;code&gt;lm_rank_mod&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_rank_mod &amp;lt;- 
+  linear_reg() %&amp;gt;% 
+  set_engine(&amp;quot;lm&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now we can actually fit our model by passing our model object to the &lt;code&gt;fit&lt;/code&gt; function:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lm_rank_fit &amp;lt;- 
+  lm_rank_mod %&amp;gt;% 
+  fit(rank ~ start_pos, data = start_and_finish)
+lm_rank_fit&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## parsnip model object
+## 
+## Fit time:  2ms 
+## 
+## Call:
+## stats::lm(formula = rank ~ start_pos, data = data)
+## 
+## Coefficients:
+## (Intercept)    start_pos  
+##      6.1500       0.2765&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is great! We were able to fit the model and we have a coefficient out for starting position. This output doesn’t tell us anything important about this relationship though. To get something a little more informative we’re going to use the &lt;code&gt;tidy()&lt;/code&gt; function from the &lt;code&gt;yardstick&lt;/code&gt; package which creates a more informative and cleaner output of the model results:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(lm_rank_fit)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2 x 5
+##   term        estimate std.error statistic  p.value
+##   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;
+## 1 (Intercept)    6.15     0.828       7.43 1.45e-11
+## 2 start_pos      0.276    0.0856      3.23 1.58e- 3&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;From this output we can see that the starting position does have an effect on finishing place and it is significant!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;All other variables held constant, if a marble with a starting position one place better than a competitor will finish .27 places ahead of that competitor&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Which is more than enough to eek out a win! But this model looks at one variable, pole position, and assumes all other variables are constant… which they aren’t.&lt;/p&gt;
+&lt;p&gt;Each race is held at a different location and with different racers and that introduces a lot of confounding variables into the equation. So while there is a significant effect with starting position, we might also want to consider the race location as well. Let’s do some exploratory data visualization and see!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lets-start-by-examining-the-relationshiop-in-race-1.-we-want-to-query-the-relationship-between-starting-position-and-final-place.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Let’s start by examining the relationshiop in race 1. We want to query the relationship between starting position and final place.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;start_and_finish %&amp;gt;% 
+  filter(race_num == 1) %&amp;gt;% 
+  ggplot(aes(start_pos, rank)) + 
+  geom_point(aes(color = team_abbr)) +
+  geom_smooth(method = &amp;quot;lm&amp;quot;, se = FALSE) +
+  labs(x = &amp;quot;Starting Position&amp;quot;,
+       y = &amp;quot;Finishing Place&amp;quot;,
+       color = &amp;quot;Team&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## `geom_smooth()` using formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-06-22-linear-regression-with-the-marbles-dataset_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;That looks about as strong a relationship as we saw plotting all the races together. Does that linearly relationship hold up across all of the races?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lets-look-at-the-relationship-between-starting-position-and-final-placement-in-all-of-the-races.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Let’s look at the relationship between starting position and final placement in all of the races.&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;start_and_finish %&amp;gt;% 
+  ggplot(aes(start_pos, rank)) +
+  geom_point(aes(color = team_abbr)) +
+  #geom_abline() +
+  geom_smooth(method=&amp;#39;lm&amp;#39;, formula = y ~ x, se = FALSE) +
+  facet_wrap(~fct_inorder(site), nrow = 2, ncol = 4) +
+  labs(x = &amp;quot;Starting Position&amp;quot;,
+       y = &amp;quot;Finishing Position&amp;quot;,
+       color = &amp;quot;Team&amp;quot;,
+       title = &amp;quot;Examining the relationship between Pole Position and Finishing Place&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-06-22-linear-regression-with-the-marbles-dataset_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This plot, in addition to the zoomed in single race plot, is a great visualization of the linear relationships between starting and ending place in each race. Just looking at this figure we can see that the linear relationship between starting and finishing positions varies drastically. Let’s add race number into our model.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Define the model formula we want to analyze:
+rank ~ start_pos + site + site*start_pos&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is a more complicated formula than last time! Not only do we want to consider race_number as its own explanatory variable, we also want to see if there is an interaction effect between starting position and race number which is indicated by the &lt;code&gt;*&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Before we can run this model however, we need to convert the “Race” location to a numeric variable so that we can us it in the linear model. This variable has 8 different categories which we need to code into something called a &lt;strong&gt;dummy variable&lt;/strong&gt;. Categorical variables have to be coded as &lt;code&gt;1&lt;/code&gt; or &lt;code&gt;0&lt;/code&gt; if you’re transferring it to a numeric value. So when working with something with more variables R has to build something called a &lt;strong&gt;contrast matrix&lt;/strong&gt;. Check out the example in &lt;a href=&#34;http://www.sthda.com/english/articles/40-regression-analysis/163-regression-with-categorical-variables-dummy-coding-essentials-in-r/&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To make this contrast matrix we’ll be implementing the &lt;code&gt;recipes&lt;/code&gt; package which has several tools for building models incrementally and with intent. fAll a recipe does is specify what exactly should be done with the data. It doesn’t actually do any kind of calculations!&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;marbles_rank_rec &amp;lt;- 
+  recipe(rank ~ start_pos + site, data = start_and_finish) %&amp;gt;% 
+  step_dummy(all_nominal(), -all_outcomes()) %&amp;gt;% 
+  step_interact(terms = ~ starts_with(&amp;quot;site_&amp;quot;):start_pos)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we have our recipe we can build our model and fit it:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Next, construct your model object
+lm_rank_mod_start_pos_race_num &amp;lt;- 
+  linear_reg() %&amp;gt;% 
+  set_engine(&amp;quot;lm&amp;quot;)
+
+marbles_rank_wkflow &amp;lt;- 
+  workflow() %&amp;gt;% 
+  add_model(lm_rank_mod_start_pos_race_num) %&amp;gt;% 
+  add_recipe(marbles_rank_rec)
+
+marbles_rank_wkflow&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ══ Workflow ════════════════════════════════════════════════════════════════════════════════════════════
+## Preprocessor: Recipe
+## Model: linear_reg()
+## 
+## ── Preprocessor ────────────────────────────────────────────────────────────────────────────────────────
+## 2 Recipe Steps
+## 
+## ● step_dummy()
+## ● step_interact()
+## 
+## ── Model ───────────────────────────────────────────────────────────────────────────────────────────────
+## Linear Regression Model Specification (regression)
+## 
+## Computational engine: lm&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;marbles_rank_fit &amp;lt;- 
+  marbles_rank_wkflow %&amp;gt;% 
+  fit(data = start_and_finish)
+
+marbles_rank_fit %&amp;gt;% 
+  pull_workflow_fit() %&amp;gt;% 
+  tidy()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 16 x 5
+##    term                             estimate std.error statistic p.value
+##    &amp;lt;chr&amp;gt;                               &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+##  1 (Intercept)                        8.15       2.44     3.35   0.00112
+##  2 start_pos                          0.0412     0.252    0.163  0.870  
+##  3 site_Hivedrive                    -2.5        3.44    -0.726  0.469  
+##  4 site_Midnight.Bay                 -1.43       3.44    -0.414  0.680  
+##  5 site_Momotorway                   -5.03       3.44    -1.46   0.147  
+##  6 site_O.raceway                    -1.93       3.44    -0.559  0.577  
+##  7 site_Razzway                      -2.4        3.44    -0.697  0.487  
+##  8 site_Savage.Speedway              -3.05       3.44    -0.885  0.378  
+##  9 site_Short.Circuit                 0.325      3.44     0.0944 0.925  
+## 10 site_Hivedrive_x_start_pos         0.294      0.356    0.826  0.411  
+## 11 site_Midnight.Bay_x_start_pos      0.168      0.356    0.471  0.639  
+## 12 site_Momotorway_x_start_pos        0.591      0.356    1.66   0.0998 
+## 13 site_O.raceway_x_start_pos         0.226      0.356    0.636  0.526  
+## 14 site_Razzway_x_start_pos           0.282      0.356    0.793  0.430  
+## 15 site_Savage.Speedway_x_start_pos   0.359      0.356    1.01   0.316  
+## 16 site_Short.Circuit_x_start_pos    -0.0382     0.356   -0.107  0.915&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we consider starting position, the site of the race, and the interaction of those two, the previous significant effect of starting position disappears. Adding these extra terms changes how each of the coefficients are interpreted. When only one variable is considered (starting position) in a simple regression, that variable is considered to be the sole effector of the response variable. But when we include other relevant information about the races we see that starting position doesn’t have that much of an effect on the finishing place of a team in race.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analyzing Data from The Office</title>
+      <link>/sessions/analyzing-data-from-the-office/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      <guid>/sessions/analyzing-data-from-the-office/</guid>
+      <description>
+
+
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.2     ✓ dplyr   1.0.0
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(schrute)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This R Markdown was created for the UVM Student Data Science Core group for an informational session on data visualization. The code reflects real time explanations and questions, and therefore is not cleaned up.&lt;/p&gt;
+&lt;p&gt;Week 2: Data wrangling&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#read in office data from IBDM
+IMDB.data &amp;lt;- readr::read_csv(&amp;#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Parsed with column specification:
+## cols(
+##   season = col_double(),
+##   episode = col_double(),
+##   title = col_character(),
+##   imdb_rating = col_double(),
+##   total_votes = col_double(),
+##   air_date = col_date(format = &amp;quot;&amp;quot;)
+## )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#read in office data from schrute package
+schrute.data &amp;lt;- schrute::theoffice
+
+#three different ways to visualize the tables
+str(IMDB.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## tibble [188 × 6] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+##  $ season     : num [1:188] 1 1 1 1 1 1 2 2 2 2 ...
+##  $ episode    : num [1:188] 1 2 3 4 5 6 1 2 3 4 ...
+##  $ title      : chr [1:188] &amp;quot;Pilot&amp;quot; &amp;quot;Diversity Day&amp;quot; &amp;quot;Health Care&amp;quot; &amp;quot;The Alliance&amp;quot; ...
+##  $ imdb_rating: num [1:188] 7.6 8.3 7.9 8.1 8.4 7.8 8.7 8.2 8.4 8.4 ...
+##  $ total_votes: num [1:188] 3706 3566 2983 2886 3179 ...
+##  $ air_date   : Date[1:188], format: &amp;quot;2005-03-24&amp;quot; &amp;quot;2005-03-29&amp;quot; ...
+##  - attr(*, &amp;quot;spec&amp;quot;)=
+##   .. cols(
+##   ..   season = col_double(),
+##   ..   episode = col_double(),
+##   ..   title = col_character(),
+##   ..   imdb_rating = col_double(),
+##   ..   total_votes = col_double(),
+##   ..   air_date = col_date(format = &amp;quot;&amp;quot;)
+##   .. )&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;str(schrute.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## tibble [55,130 × 12] (S3: tbl_df/tbl/data.frame)
+##  $ index           : int [1:55130] 1 2 3 4 5 6 7 8 9 10 ...
+##  $ season          : int [1:55130] 1 1 1 1 1 1 1 1 1 1 ...
+##  $ episode         : int [1:55130] 1 1 1 1 1 1 1 1 1 1 ...
+##  $ episode_name    : chr [1:55130] &amp;quot;Pilot&amp;quot; &amp;quot;Pilot&amp;quot; &amp;quot;Pilot&amp;quot; &amp;quot;Pilot&amp;quot; ...
+##  $ director        : chr [1:55130] &amp;quot;Ken Kwapis&amp;quot; &amp;quot;Ken Kwapis&amp;quot; &amp;quot;Ken Kwapis&amp;quot; &amp;quot;Ken Kwapis&amp;quot; ...
+##  $ writer          : chr [1:55130] &amp;quot;Ricky Gervais;Stephen Merchant;Greg Daniels&amp;quot; &amp;quot;Ricky Gervais;Stephen Merchant;Greg Daniels&amp;quot; &amp;quot;Ricky Gervais;Stephen Merchant;Greg Daniels&amp;quot; &amp;quot;Ricky Gervais;Stephen Merchant;Greg Daniels&amp;quot; ...
+##  $ character       : chr [1:55130] &amp;quot;Michael&amp;quot; &amp;quot;Jim&amp;quot; &amp;quot;Michael&amp;quot; &amp;quot;Jim&amp;quot; ...
+##  $ text            : chr [1:55130] &amp;quot;All right Jim. Your quarterlies look very good. How are things at the library?&amp;quot; &amp;quot;Oh, I told you. I couldn&amp;#39;t close it. So...&amp;quot; &amp;quot;So you&amp;#39;ve come to the master for guidance? Is this what you&amp;#39;re saying, grasshopper?&amp;quot; &amp;quot;Actually, you called me in here, but yeah.&amp;quot; ...
+##  $ text_w_direction: chr [1:55130] &amp;quot;All right Jim. Your quarterlies look very good. How are things at the library?&amp;quot; &amp;quot;Oh, I told you. I couldn&amp;#39;t close it. So...&amp;quot; &amp;quot;So you&amp;#39;ve come to the master for guidance? Is this what you&amp;#39;re saying, grasshopper?&amp;quot; &amp;quot;Actually, you called me in here, but yeah.&amp;quot; ...
+##  $ imdb_rating     : num [1:55130] 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 ...
+##  $ total_votes     : int [1:55130] 3706 3706 3706 3706 3706 3706 3706 3706 3706 3706 ...
+##  $ air_date        : Factor w/ 184 levels &amp;quot;2005-03-24&amp;quot;,&amp;quot;2005-03-29&amp;quot;,..: 1 1 1 1 1 1 1 1 1 1 ...&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(IMDB.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 6
+##   season episode title         imdb_rating total_votes air_date  
+##    &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;               &amp;lt;dbl&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;date&amp;gt;    
+## 1      1       1 Pilot                 7.6        3706 2005-03-24
+## 2      1       2 Diversity Day         8.3        3566 2005-03-29
+## 3      1       3 Health Care           7.9        2983 2005-04-05
+## 4      1       4 The Alliance          8.1        2886 2005-04-12
+## 5      1       5 Basketball            8.4        3179 2005-04-19
+## 6      1       6 Hot Girl              7.8        2852 2005-04-26&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(schrute.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 12
+##   index season episode episode_name director writer character text 
+##   &amp;lt;int&amp;gt;  &amp;lt;int&amp;gt;   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;        &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;
+## 1     1      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+## 2     2      1       1 Pilot        Ken Kwa… Ricky… Jim       Oh, …
+## 3     3      1       1 Pilot        Ken Kwa… Ricky… Michael   So y…
+## 4     4      1       1 Pilot        Ken Kwa… Ricky… Jim       Actu…
+## 5     5      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+## 6     6      1       1 Pilot        Ken Kwa… Ricky… Michael   Yes,…
+## # … with 4 more variables: text_w_direction &amp;lt;chr&amp;gt;, imdb_rating &amp;lt;dbl&amp;gt;,
+## #   total_votes &amp;lt;int&amp;gt;, air_date &amp;lt;fct&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(IMDB.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 188
+## Columns: 6
+## $ season      &amp;lt;dbl&amp;gt; 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, …
+## $ episode     &amp;lt;dbl&amp;gt; 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, …
+## $ title       &amp;lt;chr&amp;gt; &amp;quot;Pilot&amp;quot;, &amp;quot;Diversity Day&amp;quot;, &amp;quot;Health Care&amp;quot;, &amp;quot;The Alliance&amp;quot;, …
+## $ imdb_rating &amp;lt;dbl&amp;gt; 7.6, 8.3, 7.9, 8.1, 8.4, 7.8, 8.7, 8.2, 8.4, 8.4, 8.2, 8.…
+## $ total_votes &amp;lt;dbl&amp;gt; 3706, 3566, 2983, 2886, 3179, 2852, 3213, 2736, 2742, 271…
+## $ air_date    &amp;lt;date&amp;gt; 2005-03-24, 2005-03-29, 2005-04-05, 2005-04-12, 2005-04-…&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glimpse(schrute.data)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Rows: 55,130
+## Columns: 12
+## $ index            &amp;lt;int&amp;gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+## $ season           &amp;lt;int&amp;gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ episode          &amp;lt;int&amp;gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ episode_name     &amp;lt;chr&amp;gt; &amp;quot;Pilot&amp;quot;, &amp;quot;Pilot&amp;quot;, &amp;quot;Pilot&amp;quot;, &amp;quot;Pilot&amp;quot;, &amp;quot;Pilot&amp;quot;, &amp;quot;Pilot&amp;quot;…
+## $ director         &amp;lt;chr&amp;gt; &amp;quot;Ken Kwapis&amp;quot;, &amp;quot;Ken Kwapis&amp;quot;, &amp;quot;Ken Kwapis&amp;quot;, &amp;quot;Ken Kwapi…
+## $ writer           &amp;lt;chr&amp;gt; &amp;quot;Ricky Gervais;Stephen Merchant;Greg Daniels&amp;quot;, &amp;quot;Rick…
+## $ character        &amp;lt;chr&amp;gt; &amp;quot;Michael&amp;quot;, &amp;quot;Jim&amp;quot;, &amp;quot;Michael&amp;quot;, &amp;quot;Jim&amp;quot;, &amp;quot;Michael&amp;quot;, &amp;quot;Mich…
+## $ text             &amp;lt;chr&amp;gt; &amp;quot;All right Jim. Your quarterlies look very good. How…
+## $ text_w_direction &amp;lt;chr&amp;gt; &amp;quot;All right Jim. Your quarterlies look very good. How…
+## $ imdb_rating      &amp;lt;dbl&amp;gt; 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.…
+## $ total_votes      &amp;lt;int&amp;gt; 3706, 3706, 3706, 3706, 3706, 3706, 3706, 3706, 3706…
+## $ air_date         &amp;lt;fct&amp;gt; 2005-03-24, 2005-03-24, 2005-03-24, 2005-03-24, 2005…&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#who are all the writers
+distinct(schrute.data, writer)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 47 x 1
+##    writer                                     
+##    &amp;lt;chr&amp;gt;                                      
+##  1 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  2 B.J. Novak                                 
+##  3 Paul Lieberstein                           
+##  4 Michael Schur                              
+##  5 Greg Daniels                               
+##  6 Mindy Kaling                               
+##  7 Gene Stupnitsky;Lee Eisenberg              
+##  8 Larry Willmore                             
+##  9 Jennifer Celotta                           
+## 10 Lee Eisenberg;Gene Stupnitsky              
+## # … with 37 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;select(schrute.data, writer)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 55,130 x 1
+##    writer                                     
+##    &amp;lt;chr&amp;gt;                                      
+##  1 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  2 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  3 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  4 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  5 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  6 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  7 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  8 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  9 Ricky Gervais;Stephen Merchant;Greg Daniels
+## 10 Ricky Gervais;Stephen Merchant;Greg Daniels
+## # … with 55,120 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;filter(schrute.data, episode == 1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 2,643 x 12
+##    index season episode episode_name director writer character text 
+##    &amp;lt;int&amp;gt;  &amp;lt;int&amp;gt;   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt;        &amp;lt;chr&amp;gt;    &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt;     &amp;lt;chr&amp;gt;
+##  1     1      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+##  2     2      1       1 Pilot        Ken Kwa… Ricky… Jim       Oh, …
+##  3     3      1       1 Pilot        Ken Kwa… Ricky… Michael   So y…
+##  4     4      1       1 Pilot        Ken Kwa… Ricky… Jim       Actu…
+##  5     5      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+##  6     6      1       1 Pilot        Ken Kwa… Ricky… Michael   Yes,…
+##  7     7      1       1 Pilot        Ken Kwa… Ricky… Michael   I&amp;#39;ve…
+##  8     8      1       1 Pilot        Ken Kwa… Ricky… Pam       Well…
+##  9     9      1       1 Pilot        Ken Kwa… Ricky… Michael   If y…
+## 10    10      1       1 Pilot        Ken Kwa… Ricky… Pam       What?
+## # … with 2,633 more rows, and 4 more variables: text_w_direction &amp;lt;chr&amp;gt;,
+## #   imdb_rating &amp;lt;dbl&amp;gt;, total_votes &amp;lt;int&amp;gt;, air_date &amp;lt;fct&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#pipe operations %&amp;gt;% 
+
+#see how many episodes each writer wrote
+writer.info &amp;lt;- 
+  schrute.data %&amp;gt;% 
+  group_by(season, episode) %&amp;gt;% #collapse season first, and then episode, but this will leave us with many duplicates
+  distinct(writer, .keep_all = TRUE) #distinct is going to get rid of those duplicates, but also of all the other columns
+#use .keep_all to keep other columns, BUT R does not distinguish between the duplicates based on previous code and just picks first row in that set of duplicates that are specified&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Week 3:data visualization&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#ggplot: 
+  # 1. provide the DATA
+  # 2. map variables to AESTHETICS
+  # 3. add LAYERS to render the data and aesthetics to the figure
+
+#QUESTION: how many episodes did each writer write?
+#bar chart of writer information
+ggplot(schrute.data, aes(x = writer)) +
+  geom_bar()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#problems?
+
+#bar chart of writer information after creating new table
+ggplot(writer.info, aes(x = writer)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#QUESTION: how many episodes did each writer write per season
+ggplot(writer.info, aes(x = writer, fill = season)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#problems?
+
+#bar chart of writer information after cleaning up data types in table
+ggplot(writer.info, aes(x = writer, fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#ADDING MORE LAYERS
+#Axes changes
+
+
+#Reorder categories by frequency
+ggplot(writer.info, aes(x = fct_infreq(writer), fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-5.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#levels()
+#fct_infreq()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Visualizing the ratings based on the writer
+
+#Notice anything about the writers?
+#separate writers to each individual
+writer.individual.info &amp;lt;- 
+  writer.info %&amp;gt;% 
+  separate_rows(writer, sep = &amp;quot;;&amp;quot;)
+
+
+
+
+#QUESTION: What are the writers&amp;#39; ratings?
+
+#box plot
+ggplot(writer.individual.info, aes(x = writer, y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Reordering the x axis by median
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#Add in points for each episode
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_point()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-3.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;#separate points by season
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-4.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Diff%20AES-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;  labs(title = &amp;quot;fun with schrute data&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## $title
+## [1] &amp;quot;fun with schrute data&amp;quot;
+## 
+## attr(,&amp;quot;class&amp;quot;)
+## [1] &amp;quot;labels&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

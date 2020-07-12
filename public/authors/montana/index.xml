@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Montana Kay Lara | UVM Data Science Core</title>
+    <link>/authors/montana/</link>
+      <atom:link href="/authors/montana/index.xml" rel="self" type="application/rss+xml" />
+    <description>Montana Kay Lara</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/authors/montana/avatar_hu74c48e9764281b1dc14130d6c763d12e_69553_270x270_fill_q90_lanczos_center.jpg</url>
+      <title>Montana Kay Lara</title>
+      <link>/authors/montana/</link>
+    </image>
+    
+  </channel>
+</rss>

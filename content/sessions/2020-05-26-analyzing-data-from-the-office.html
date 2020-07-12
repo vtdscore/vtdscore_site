@@ -1,0 +1,269 @@
+---
+title: Analyzing Data from The Office
+author: Montana Kay Lara
+date: '2020-05-26'
+slug: analyzing-data-from-the-office
+categories:
+  - TidyTuesday
+tags:
+  - tidyverse
+---
+
+
+
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────────────────────────────── tidyverse 1.3.0 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.2     ✓ purrr   0.3.4
+## ✓ tibble  3.0.2     ✓ dplyr   1.0.0
+## ✓ tidyr   1.1.0     ✓ stringr 1.4.0
+## ✓ readr   1.3.1     ✓ forcats 0.5.0</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(schrute)</code></pre>
+<p>This R Markdown was created for the UVM Student Data Science Core group for an informational session on data visualization. The code reflects real time explanations and questions, and therefore is not cleaned up.</p>
+<p>Week 2: Data wrangling</p>
+<pre class="r"><code>#read in office data from IBDM
+IMDB.data &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   season = col_double(),
+##   episode = col_double(),
+##   title = col_character(),
+##   imdb_rating = col_double(),
+##   total_votes = col_double(),
+##   air_date = col_date(format = &quot;&quot;)
+## )</code></pre>
+<pre class="r"><code>#read in office data from schrute package
+schrute.data &lt;- schrute::theoffice
+
+#three different ways to visualize the tables
+str(IMDB.data)</code></pre>
+<pre><code>## tibble [188 × 6] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+##  $ season     : num [1:188] 1 1 1 1 1 1 2 2 2 2 ...
+##  $ episode    : num [1:188] 1 2 3 4 5 6 1 2 3 4 ...
+##  $ title      : chr [1:188] &quot;Pilot&quot; &quot;Diversity Day&quot; &quot;Health Care&quot; &quot;The Alliance&quot; ...
+##  $ imdb_rating: num [1:188] 7.6 8.3 7.9 8.1 8.4 7.8 8.7 8.2 8.4 8.4 ...
+##  $ total_votes: num [1:188] 3706 3566 2983 2886 3179 ...
+##  $ air_date   : Date[1:188], format: &quot;2005-03-24&quot; &quot;2005-03-29&quot; ...
+##  - attr(*, &quot;spec&quot;)=
+##   .. cols(
+##   ..   season = col_double(),
+##   ..   episode = col_double(),
+##   ..   title = col_character(),
+##   ..   imdb_rating = col_double(),
+##   ..   total_votes = col_double(),
+##   ..   air_date = col_date(format = &quot;&quot;)
+##   .. )</code></pre>
+<pre class="r"><code>str(schrute.data)</code></pre>
+<pre><code>## tibble [55,130 × 12] (S3: tbl_df/tbl/data.frame)
+##  $ index           : int [1:55130] 1 2 3 4 5 6 7 8 9 10 ...
+##  $ season          : int [1:55130] 1 1 1 1 1 1 1 1 1 1 ...
+##  $ episode         : int [1:55130] 1 1 1 1 1 1 1 1 1 1 ...
+##  $ episode_name    : chr [1:55130] &quot;Pilot&quot; &quot;Pilot&quot; &quot;Pilot&quot; &quot;Pilot&quot; ...
+##  $ director        : chr [1:55130] &quot;Ken Kwapis&quot; &quot;Ken Kwapis&quot; &quot;Ken Kwapis&quot; &quot;Ken Kwapis&quot; ...
+##  $ writer          : chr [1:55130] &quot;Ricky Gervais;Stephen Merchant;Greg Daniels&quot; &quot;Ricky Gervais;Stephen Merchant;Greg Daniels&quot; &quot;Ricky Gervais;Stephen Merchant;Greg Daniels&quot; &quot;Ricky Gervais;Stephen Merchant;Greg Daniels&quot; ...
+##  $ character       : chr [1:55130] &quot;Michael&quot; &quot;Jim&quot; &quot;Michael&quot; &quot;Jim&quot; ...
+##  $ text            : chr [1:55130] &quot;All right Jim. Your quarterlies look very good. How are things at the library?&quot; &quot;Oh, I told you. I couldn&#39;t close it. So...&quot; &quot;So you&#39;ve come to the master for guidance? Is this what you&#39;re saying, grasshopper?&quot; &quot;Actually, you called me in here, but yeah.&quot; ...
+##  $ text_w_direction: chr [1:55130] &quot;All right Jim. Your quarterlies look very good. How are things at the library?&quot; &quot;Oh, I told you. I couldn&#39;t close it. So...&quot; &quot;So you&#39;ve come to the master for guidance? Is this what you&#39;re saying, grasshopper?&quot; &quot;Actually, you called me in here, but yeah.&quot; ...
+##  $ imdb_rating     : num [1:55130] 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 7.6 ...
+##  $ total_votes     : int [1:55130] 3706 3706 3706 3706 3706 3706 3706 3706 3706 3706 ...
+##  $ air_date        : Factor w/ 184 levels &quot;2005-03-24&quot;,&quot;2005-03-29&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+<pre class="r"><code>head(IMDB.data)</code></pre>
+<pre><code>## # A tibble: 6 x 6
+##   season episode title         imdb_rating total_votes air_date  
+##    &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;               &lt;dbl&gt;       &lt;dbl&gt; &lt;date&gt;    
+## 1      1       1 Pilot                 7.6        3706 2005-03-24
+## 2      1       2 Diversity Day         8.3        3566 2005-03-29
+## 3      1       3 Health Care           7.9        2983 2005-04-05
+## 4      1       4 The Alliance          8.1        2886 2005-04-12
+## 5      1       5 Basketball            8.4        3179 2005-04-19
+## 6      1       6 Hot Girl              7.8        2852 2005-04-26</code></pre>
+<pre class="r"><code>head(schrute.data)</code></pre>
+<pre><code>## # A tibble: 6 x 12
+##   index season episode episode_name director writer character text 
+##   &lt;int&gt;  &lt;int&gt;   &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;     &lt;chr&gt;
+## 1     1      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+## 2     2      1       1 Pilot        Ken Kwa… Ricky… Jim       Oh, …
+## 3     3      1       1 Pilot        Ken Kwa… Ricky… Michael   So y…
+## 4     4      1       1 Pilot        Ken Kwa… Ricky… Jim       Actu…
+## 5     5      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+## 6     6      1       1 Pilot        Ken Kwa… Ricky… Michael   Yes,…
+## # … with 4 more variables: text_w_direction &lt;chr&gt;, imdb_rating &lt;dbl&gt;,
+## #   total_votes &lt;int&gt;, air_date &lt;fct&gt;</code></pre>
+<pre class="r"><code>glimpse(IMDB.data)</code></pre>
+<pre><code>## Rows: 188
+## Columns: 6
+## $ season      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, …
+## $ episode     &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, …
+## $ title       &lt;chr&gt; &quot;Pilot&quot;, &quot;Diversity Day&quot;, &quot;Health Care&quot;, &quot;The Alliance&quot;, …
+## $ imdb_rating &lt;dbl&gt; 7.6, 8.3, 7.9, 8.1, 8.4, 7.8, 8.7, 8.2, 8.4, 8.4, 8.2, 8.…
+## $ total_votes &lt;dbl&gt; 3706, 3566, 2983, 2886, 3179, 2852, 3213, 2736, 2742, 271…
+## $ air_date    &lt;date&gt; 2005-03-24, 2005-03-29, 2005-04-05, 2005-04-12, 2005-04-…</code></pre>
+<pre class="r"><code>glimpse(schrute.data)</code></pre>
+<pre><code>## Rows: 55,130
+## Columns: 12
+## $ index            &lt;int&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…
+## $ season           &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ episode          &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
+## $ episode_name     &lt;chr&gt; &quot;Pilot&quot;, &quot;Pilot&quot;, &quot;Pilot&quot;, &quot;Pilot&quot;, &quot;Pilot&quot;, &quot;Pilot&quot;…
+## $ director         &lt;chr&gt; &quot;Ken Kwapis&quot;, &quot;Ken Kwapis&quot;, &quot;Ken Kwapis&quot;, &quot;Ken Kwapi…
+## $ writer           &lt;chr&gt; &quot;Ricky Gervais;Stephen Merchant;Greg Daniels&quot;, &quot;Rick…
+## $ character        &lt;chr&gt; &quot;Michael&quot;, &quot;Jim&quot;, &quot;Michael&quot;, &quot;Jim&quot;, &quot;Michael&quot;, &quot;Mich…
+## $ text             &lt;chr&gt; &quot;All right Jim. Your quarterlies look very good. How…
+## $ text_w_direction &lt;chr&gt; &quot;All right Jim. Your quarterlies look very good. How…
+## $ imdb_rating      &lt;dbl&gt; 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.6, 7.…
+## $ total_votes      &lt;int&gt; 3706, 3706, 3706, 3706, 3706, 3706, 3706, 3706, 3706…
+## $ air_date         &lt;fct&gt; 2005-03-24, 2005-03-24, 2005-03-24, 2005-03-24, 2005…</code></pre>
+<pre class="r"><code>#who are all the writers
+distinct(schrute.data, writer)</code></pre>
+<pre><code>## # A tibble: 47 x 1
+##    writer                                     
+##    &lt;chr&gt;                                      
+##  1 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  2 B.J. Novak                                 
+##  3 Paul Lieberstein                           
+##  4 Michael Schur                              
+##  5 Greg Daniels                               
+##  6 Mindy Kaling                               
+##  7 Gene Stupnitsky;Lee Eisenberg              
+##  8 Larry Willmore                             
+##  9 Jennifer Celotta                           
+## 10 Lee Eisenberg;Gene Stupnitsky              
+## # … with 37 more rows</code></pre>
+<pre class="r"><code>select(schrute.data, writer)</code></pre>
+<pre><code>## # A tibble: 55,130 x 1
+##    writer                                     
+##    &lt;chr&gt;                                      
+##  1 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  2 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  3 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  4 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  5 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  6 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  7 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  8 Ricky Gervais;Stephen Merchant;Greg Daniels
+##  9 Ricky Gervais;Stephen Merchant;Greg Daniels
+## 10 Ricky Gervais;Stephen Merchant;Greg Daniels
+## # … with 55,120 more rows</code></pre>
+<pre class="r"><code>filter(schrute.data, episode == 1)</code></pre>
+<pre><code>## # A tibble: 2,643 x 12
+##    index season episode episode_name director writer character text 
+##    &lt;int&gt;  &lt;int&gt;   &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;     &lt;chr&gt;
+##  1     1      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+##  2     2      1       1 Pilot        Ken Kwa… Ricky… Jim       Oh, …
+##  3     3      1       1 Pilot        Ken Kwa… Ricky… Michael   So y…
+##  4     4      1       1 Pilot        Ken Kwa… Ricky… Jim       Actu…
+##  5     5      1       1 Pilot        Ken Kwa… Ricky… Michael   All …
+##  6     6      1       1 Pilot        Ken Kwa… Ricky… Michael   Yes,…
+##  7     7      1       1 Pilot        Ken Kwa… Ricky… Michael   I&#39;ve…
+##  8     8      1       1 Pilot        Ken Kwa… Ricky… Pam       Well…
+##  9     9      1       1 Pilot        Ken Kwa… Ricky… Michael   If y…
+## 10    10      1       1 Pilot        Ken Kwa… Ricky… Pam       What?
+## # … with 2,633 more rows, and 4 more variables: text_w_direction &lt;chr&gt;,
+## #   imdb_rating &lt;dbl&gt;, total_votes &lt;int&gt;, air_date &lt;fct&gt;</code></pre>
+<pre class="r"><code>#pipe operations %&gt;% 
+
+#see how many episodes each writer wrote
+writer.info &lt;- 
+  schrute.data %&gt;% 
+  group_by(season, episode) %&gt;% #collapse season first, and then episode, but this will leave us with many duplicates
+  distinct(writer, .keep_all = TRUE) #distinct is going to get rid of those duplicates, but also of all the other columns
+#use .keep_all to keep other columns, BUT R does not distinguish between the duplicates based on previous code and just picks first row in that set of duplicates that are specified</code></pre>
+<p>Week 3:data visualization</p>
+<pre class="r"><code>#ggplot: 
+  # 1. provide the DATA
+  # 2. map variables to AESTHETICS
+  # 3. add LAYERS to render the data and aesthetics to the figure
+
+#QUESTION: how many episodes did each writer write?
+#bar chart of writer information
+ggplot(schrute.data, aes(x = writer)) +
+  geom_bar()</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-1.png" width="672" /></p>
+<pre class="r"><code>#problems?
+
+#bar chart of writer information after creating new table
+ggplot(writer.info, aes(x = writer)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-2.png" width="672" /></p>
+<pre class="r"><code>#QUESTION: how many episodes did each writer write per season
+ggplot(writer.info, aes(x = writer, fill = season)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-3.png" width="672" /></p>
+<pre class="r"><code>#problems?
+
+#bar chart of writer information after cleaning up data types in table
+ggplot(writer.info, aes(x = writer, fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-4.png" width="672" /></p>
+<pre class="r"><code>#ADDING MORE LAYERS
+#Axes changes
+
+
+#Reorder categories by frequency
+ggplot(writer.info, aes(x = fct_infreq(writer), fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/ggplot2%20intro-5.png" width="672" /></p>
+<pre class="r"><code>#levels()
+#fct_infreq()</code></pre>
+<pre class="r"><code>#Visualizing the ratings based on the writer
+
+#Notice anything about the writers?
+#separate writers to each individual
+writer.individual.info &lt;- 
+  writer.info %&gt;% 
+  separate_rows(writer, sep = &quot;;&quot;)
+
+
+
+
+#QUESTION: What are the writers&#39; ratings?
+
+#box plot
+ggplot(writer.individual.info, aes(x = writer, y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-1.png" width="672" /></p>
+<pre class="r"><code>#Reordering the x axis by median
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-2.png" width="672" /></p>
+<pre class="r"><code>#Add in points for each episode
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_point()</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-3.png" width="672" /></p>
+<pre class="r"><code>#separate points by season
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Box%20plot-4.png" width="672" /></p>
+<pre class="r"><code>ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))</code></pre>
+<p><img src="/sessions/2020-05-26-analyzing-data-from-the-office_files/figure-html/Diff%20AES-1.png" width="672" /></p>
+<pre class="r"><code>  labs(title = &quot;fun with schrute data&quot;)</code></pre>
+<pre><code>## $title
+## [1] &quot;fun with schrute data&quot;
+## 
+## attr(,&quot;class&quot;)
+## [1] &quot;labels&quot;</code></pre>

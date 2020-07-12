@@ -1,0 +1,170 @@
+---
+title: Analyzing Data from The Office
+author: Montana Kay Lara
+date: '2020-05-26'
+slug: analyzing-data-from-the-office
+categories:
+  - TidyTuesday
+tags:
+  - tidyverse
+---
+```{r setup}
+library(tidyverse)
+library(ggplot2)
+library(schrute)
+```
+
+
+This R Markdown was created for the UVM Student Data Science Core group for an informational session on data visualization. The code reflects real time explanations and questions, and therefore is not cleaned up. 
+
+Week 2: Data wrangling
+
+```{r Install packages and data}
+#read in office data from IBDM
+IMDB.data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-17/office_ratings.csv')
+
+#read in office data from schrute package
+schrute.data <- schrute::theoffice
+
+#three different ways to visualize the tables
+str(IMDB.data)
+str(schrute.data)
+
+head(IMDB.data)
+head(schrute.data)
+
+glimpse(IMDB.data)
+glimpse(schrute.data)
+```
+
+
+```{r Data wrangling}
+
+
+#who are all the writers
+distinct(schrute.data, writer)
+select(schrute.data, writer)
+filter(schrute.data, episode == 1)
+
+
+#pipe operations %>% 
+
+#see how many episodes each writer wrote
+writer.info <- 
+  schrute.data %>% 
+  group_by(season, episode) %>% #collapse season first, and then episode, but this will leave us with many duplicates
+  distinct(writer, .keep_all = TRUE) #distinct is going to get rid of those duplicates, but also of all the other columns
+#use .keep_all to keep other columns, BUT R does not distinguish between the duplicates based on previous code and just picks first row in that set of duplicates that are specified
+
+```
+
+
+Week 3:data visualization
+
+```{r ggplot2 intro}
+#ggplot: 
+  # 1. provide the DATA
+  # 2. map variables to AESTHETICS
+  # 3. add LAYERS to render the data and aesthetics to the figure
+
+#QUESTION: how many episodes did each writer write?
+#bar chart of writer information
+ggplot(schrute.data, aes(x = writer)) +
+  geom_bar()
+
+#problems?
+
+#bar chart of writer information after creating new table
+ggplot(writer.info, aes(x = writer)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+#QUESTION: how many episodes did each writer write per season
+ggplot(writer.info, aes(x = writer, fill = season)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+
+#problems?
+
+#bar chart of writer information after cleaning up data types in table
+ggplot(writer.info, aes(x = writer, fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+
+
+#ADDING MORE LAYERS
+#Axes changes
+
+
+#Reorder categories by frequency
+ggplot(writer.info, aes(x = fct_infreq(writer), fill = as.factor(season))) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+
+#levels()
+#fct_infreq()
+```
+
+```{r Box plot}
+#Visualizing the ratings based on the writer
+
+#Notice anything about the writers?
+#separate writers to each individual
+writer.individual.info <- 
+  writer.info %>% 
+  separate_rows(writer, sep = ";")
+
+
+
+
+#QUESTION: What are the writers' ratings?
+
+#box plot
+ggplot(writer.individual.info, aes(x = writer, y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+
+
+
+#Reordering the x axis by median
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1))
+
+
+#Add in points for each episode
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_point()
+
+
+#separate points by season
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))
+```
+
+
+```{r Diff AES}
+ggplot(writer.individual.info, aes(x = fct_reorder(writer, imdb_rating, .fun = median, .desc = TRUE), y = imdb_rating)) + 
+  geom_boxplot() + 
+  theme(axis.text.x = element_text(angle = 45, 
+                                   hjust = 1)) +
+  geom_jitter(aes(color = factor(season)))
+  labs(title = "fun with schrute data")
+```
+

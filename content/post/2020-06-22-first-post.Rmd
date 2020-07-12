@@ -1,0 +1,11 @@
+---
+title: First Post!
+author: Jeffrey Brabec
+date: '2020-06-22'
+slug: first-post
+categories:
+  - Introductions
+tags: []
+---
+
+# In this section we'll post blog-style documents where we discuss very specific topics!
