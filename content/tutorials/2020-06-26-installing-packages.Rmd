@@ -1,7 +1,7 @@
 ---
 title: Installing Packages
 author: Jeffrey Brabec
-date: '2020-06-26'
+date: '2020-08-26'
 slug: installing-packages
 categories:
   - Tutorials
@@ -15,16 +15,16 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 
 ## Installing Packages
 
-As you start doing more advanced analyses in R (e.g. genetic or imaging; machine learning), there are times where you'll need to install new packages that were written specifically to do those analyses. These packages can add completely new tools to your R toolbox, or they help optimize functions or outputs from base R and other R packages. 
+As you start doing more advanced analyses in R (e.g. gene expression or imaging analysis; machine learning), there are times where you'll need to install new packages that were written specifically to do those analyses. These packages can add completely new tools to your R toolbox, or they will help optimize functions or outputs from base R and other R packages. 
 
-So how do we install new packages? We've already used the most common way to download packages several times:
+So how do we install new packages? The most common way to download packages is done using this syntax:
 ```{r eval=FALSE}
 install.packages("tidyverse")
 ```
 
-This function searches "The Comprehensive R Archive Network" or [CRAN](https://cran.r-project.org) for the package(s) you pass to it. CRAN is a file transfer protocol (FTP) server with updated versions of all R packages maintained on CRAN. But it doesn't have all R packages. 
+This function, `install.packages()`, searches "The Comprehensive R Archive Network" or [CRAN](https://cran.r-project.org) for the package(s) you pass to it. CRAN is a file transfer protocol [(FTP)](https://en.wikipedia.org/wiki/File_Transfer_Protocol) server with updated versions of all R packages maintained on CRAN.
 
-If you want to install multiple packages at the same time without retyping `install.packages` you can pass a vector of package names to the install function:
+There will be times where you start using another lab's workflow and you might find that they use multiple packages that you have yet to install. Instead of typing `install.packages()` over and over again, you can provide a vector of the package names you'd like to install, and the function will iteratively install the packages listed:
 ```{r eval=FALSE}
 to_install <- c("tidyverse", "gprofiler2", "cowplot")
 install.packages(to_install)
@@ -32,7 +32,7 @@ install.packages(to_install)
 install.packages(c("tidyverse", "gprofiler2", "cowplot"))
 ```
 
-The same thing can be done when you want to load your packages at the beginning of your workflow. Sometimes you could have upwards of 15 packages that you're working with and its a pain to individually library each one:
+The same thing can be done when you want to load your packages at the beginning of your workflow. Sometimes you could have upwards of 15 packages that you're working with and it's inefficient to individually load each one:
 ```{r eval=FALSE}
 to_load <- c("tidyverse", "gprofiler2", "cowplot", "Matrix", "tidymodels")
 library(to_load)
@@ -41,23 +41,22 @@ library(c("tidyverse", "gprofiler2", "cowplot", "Matrix", "tidymodels"))
 ```
 
 # Devtools
-Sometimes you'll run across someone who is in the process of developing a package that hasn't been released on CRAN yet. They'll often make development versions of their code available on GitHub for people to install and use prior to release of the full version. This not only gets the helpful tool the developer is creating out sooner, but it also allows people to road test the code and find any bugs prior to full release.
+Sometimes you'll run across someone who is in the process of developing a new package which means it hasn't been released on CRAN yet. They'll often make development versions of their code available on GitHub for people to install and use prior to release of the full version. This practice ensures that a useful tool is accessible as soon as possible, and it also allows people to road test the code and find any bugs prior to full release.
 
-To install a package that is still in development from GitHub you'll need to first install the `devtools` pacakge from CRAN. It has several handy tools for people developing their own packages, but all we really need to use it for is getting those packages!
+To install a package that is still in development from GitHub you'll need to first install the `remotes` pacakge from CRAN. It has several handy tools for downloading and updating packages from various repositories!
 
-In this case I want to download the TidyTuesdayR package which lets me easily read each week's TidyTuesday data directly into R.
+In this case I want to download the TidyTuesdayR package which lets me easily read each week's [TidyTuesday](https://github.com/rfordatascience/tidytuesday) data directly into R.
 ```{r eval=FALSE}
-install.packages("devtools")
-remotes()
-devtools::install_github("thebioengineer/tidytuesdayR") 
+install.packages("remotes")
+install_github("thebioengineer/tidytuesdayR") 
 ```
-To install the package you need to provide the username of the person with the package, and the repository in which they have the package. In this case "thebioengineer" is the one developing this package and he has all the relevant code needed to compile the package in the repository "tidytuesdayR". 
+To install a package from GitHub you need to provide the username of the person developing the package and the repository in which they have the package. In this case "thebioengineer" is the one developing this package and he has all the relevant code needed to compile the package in the repository "tidytuesdayR". 
 
-However, as of June 26th the tidytuesdayR package is on CRAN so is now available to install using `install.packages()`.
+However, as of June 26th the tidytuesdayR package is on CRAN so it's now available to install using `install.packages()`!
 
 ## Bioconductor
 
-As biological scientists there is one final package collection that we'll want to use if we're doing any kind of genomic analyses and that is [Bioconductor](http://bioconductor.org). Bioconductor specifically maintains packages that you'll need to do everything from accessing genomic data from online databases to doing advanced statistical analyses. As we continue diving into R we'll do a deep dive on some of the most useful packages they provide. 
+As biological scientists there is one final package repository that we'll want to use if we're doing any kind of genetic or genomic analyses and that is [Bioconductor](http://bioconductor.org). Bioconductor specifically maintains packages that help with biological analyses. Packages kept on Biocondoucter will help you do everythign from downloading data from online databases to doing advanced statistics on biological data. As we continue diving into R we'll do a deep dive on some of the most useful packages they provide. 
 
 To install Bioconductor:
 ```{r eval=FALSE}
@@ -66,13 +65,13 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install(version = "3.11")
 ```
 
-This snippet of code first checks if the package "BiocManager" is already downloaded. If it isn't than the package is installed. Once its installed, the package has its own "install" function that allows you to update it to the latest version, in this case 3.11.
+This snippet of code first checks if the package "BiocManager" is already downloaded. If it isn't than the package is installed. Once its installed, the package has its own "install" function that allows you to update it to the latest version which, at the time of writing, was 3.11.
 
-That last line of code in the previous section is just how we'll download packages from Bioconductor:
+That last line of code in the previous section is the exact syntax we'll use to download packages from Bioconductor:
 ```{r eval=FALSE}
 BiocManager::install("GEOquery")
 ```
 
-`GEOquery` is a useful package that we'll use down the road. It provides an interface to the Gene Expression Omnibus or [GEO](https://www.ncbi.nlm.nih.gov/geo/) which is a repository of gene expression data from NIH funded projects.
+`GEOquery` is a useful package that we'll use in future sessions. It provides an interface to the Gene Expression Omnibus or [GEO](https://www.ncbi.nlm.nih.gov/geo/) which is a repository of gene expression data from NIH funded projects.
 
 Those are the main ways that we'll install packages in R! I hope you found this helpful!
