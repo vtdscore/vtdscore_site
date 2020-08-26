@@ -40,7 +40,7 @@ library(to_load)
 library(c("tidyverse", "gprofiler2", "cowplot", "Matrix", "tidymodels"))
 ```
 
-# Devtools
+# Remotes
 Sometimes you'll run across someone who is in the process of developing a new package which means it hasn't been released on CRAN yet. They'll often make development versions of their code available on GitHub for people to install and use prior to release of the full version. This practice ensures that a useful tool is accessible as soon as possible, and it also allows people to road test the code and find any bugs prior to full release.
 
 To install a package that is still in development from GitHub you'll need to first install the `remotes` pacakge from CRAN. It has several handy tools for downloading and updating packages from various repositories!
