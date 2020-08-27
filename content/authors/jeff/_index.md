@@ -25,7 +25,7 @@ role: Graduate Teaching Assistant
 social:
 - icon: envelope
   icon_pack: fas
-  link: jbrabec@uvm.edu
+  link: "jbrabec@uvm.edu"
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/JiffyTweeting
