@@ -16,6 +16,8 @@ interests:
 - Machine Learning
 - R!
 - Data Science
+- Alzheimer's Disease
+- Genetics
 organizations:
 - name: Neuroscience Graduate Program
   url: "https://www.uvm.edu/neurosciencegrad/about_us"
@@ -23,7 +25,7 @@ role: Graduate Teaching Assistant
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
+  link: jbrabec@uvm.edu
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/JiffyTweeting
